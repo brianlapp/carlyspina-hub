@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ServiceCard } from "@/components/ServiceCard";
+import { HeroSlider } from "@/components/HeroSlider";
 
 const services = [
   {
@@ -37,54 +38,9 @@ const services = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-sage-50 to-sage-100">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden px-6 py-24 sm:px-8 sm:py-32">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mx-auto max-w-7xl text-center"
-        >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="mb-8 inline-block rounded-full bg-sage-100 px-4 py-1.5"
-          >
-            <span className="text-sm font-medium text-sage-700">Holistic Healing & Wellness</span>
-          </motion.div>
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="mb-6 text-4xl font-bold tracking-tight text-sage-900 sm:text-6xl"
-          >
-            Transform Your Energy,
-            <br />
-            Transform Your Life
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="mx-auto mb-10 max-w-2xl text-lg text-sage-600"
-          >
-            Experience profound healing through a unique blend of ancient wisdom and modern techniques.
-            Begin your journey to wellness today.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-          >
-            <a
-              href="#contact"
-              className="inline-block rounded-full bg-sage-900 px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-sage-800"
-            >
-              Book a Session
-            </a>
-          </motion.div>
-        </motion.div>
+      {/* Hero Section with Slider */}
+      <section className="relative overflow-hidden">
+        <HeroSlider />
       </section>
 
       {/* Services Section */}
