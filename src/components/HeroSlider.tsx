@@ -3,21 +3,21 @@ import { motion } from "framer-motion";
 
 const slides = [
   {
-    title: "Welcome to Holistic Healing",
-    description: "Begin your journey to wellness and spiritual growth",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb", // Serene water and trees image
+    title: "Experience Deep Healing",
+    description: "Discover the transformative power of Reiki and Spinal Energetics massage",
+    image: "https://images.unsplash.com/photo-1591343395082-e120087004b4", // Calming spa setting
     color: "from-sage-50 to-earth-100"
   },
   {
-    title: "Transform Your Energy",
-    description: "Experience profound healing through ancient wisdom and modern techniques",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22", // Warm, glowing lights between trees
+    title: "Reiki Energy Healing",
+    description: "Balance your body's energy centers through gentle, healing touch",
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b", // Peaceful meditation space
     color: "from-earth-50 to-sage-100"
   },
   {
-    title: "Discover Inner Peace",
-    description: "Join us on a path to spiritual awakening and emotional balance",
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b", // Aerial view of serene mountains
+    title: "Spinal Energetics",
+    description: "Release tension and restore harmony through specialized spinal therapy",
+    image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35", // Serene wellness space
     color: "from-sage-100 to-earth-50"
   }
 ];
