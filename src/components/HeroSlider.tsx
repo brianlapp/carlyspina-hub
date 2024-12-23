@@ -5,19 +5,19 @@ const slides = [
   {
     title: "Welcome to Holistic Healing",
     description: "Begin your journey to wellness and spiritual growth",
-    image: "/placeholder.svg", // You can replace this with actual images later
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb", // Serene water and trees image
     color: "from-sage-50 to-earth-100"
   },
   {
     title: "Transform Your Energy",
     description: "Experience profound healing through ancient wisdom and modern techniques",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22", // Warm, glowing lights between trees
     color: "from-earth-50 to-sage-100"
   },
   {
     title: "Discover Inner Peace",
     description: "Join us on a path to spiritual awakening and emotional balance",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b", // Aerial view of serene mountains
     color: "from-sage-100 to-earth-50"
   }
 ];
