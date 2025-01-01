@@ -15,7 +15,7 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <section className="py-20 bg-sage-50">
+    <section className="py-20 bg-green-50">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -24,18 +24,28 @@ export const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl font-semibold text-sage-900 mb-12">Here's What Clients Are Saying</h2>
+          <h2 className="text-3xl font-semibold text-emerald-900 mb-12">Here's What Clients Are Saying</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-sage-200">
-                <CardContent className="p-6">
-                  <p className="text-sage-600 italic mb-4">{testimonial.content}</p>
-                  <p className="text-sage-900 font-semibold">- {testimonial.author}</p>
-                </CardContent>
-              </Card>
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Card className="relative bg-white/50 backdrop-blur-sm border border-emerald-100 shadow-lg hover:shadow-emerald-100/50 transition-all duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-50/50 to-green-50/50 rounded-lg" />
+                  <CardContent className="relative p-8">
+                    <div className="absolute top-0 left-0 w-full h-full bg-white/40 backdrop-blur-[2px] rounded-lg" />
+                    <div className="relative">
+                      <p className="text-emerald-800 italic mb-6 leading-relaxed">{testimonial.content}</p>
+                      <p className="text-emerald-900 font-semibold">- {testimonial.author}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
             ))}
           </div>
-          <Button className="mt-8 bg-emerald-600 hover:bg-emerald-700 text-white">Read More Testimonials</Button>
+          <Button className="mt-12 bg-emerald-600 hover:bg-emerald-700 text-white">Read More Testimonials</Button>
         </motion.div>
       </div>
     </section>
