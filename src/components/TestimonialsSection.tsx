@@ -35,7 +35,7 @@ export const TestimonialsSection = () => {
               </Card>
             ))}
           </div>
-          <Button className="mt-8 bg-sage-600 hover:bg-sage-700">Read More Testimonials</Button>
+          <Button className="mt-8 bg-emerald-600 hover:bg-emerald-700 text-white">Read More Testimonials</Button>
         </motion.div>
       </div>
     </section>

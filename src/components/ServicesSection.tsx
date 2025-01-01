@@ -59,7 +59,7 @@ export const ServicesSection = () => {
               </Card>
             ))}
           </div>
-          <Button className="mt-8 bg-sage-50 text-sage-900 hover:bg-sage-100">Learn More About Our Services</Button>
+          <Button className="mt-8 bg-emerald-600 hover:bg-emerald-700 text-white">Learn More About Our Services</Button>
         </motion.div>
       </div>
     </section>
