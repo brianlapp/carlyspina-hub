@@ -17,8 +17,8 @@ export const CTASection = () => {
             Explore our services or book a session today. Your path to wellness begins here.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <Button className="bg-sage-600 hover:bg-sage-700">Book Now</Button>
-            <Button variant="outline" className="border-sage-600 text-sage-600 hover:bg-sage-50">
+            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">Book Now</Button>
+            <Button variant="outline" className="border-emerald-600 text-emerald-600 hover:bg-emerald-50">
               Explore Services
             </Button>
           </div>

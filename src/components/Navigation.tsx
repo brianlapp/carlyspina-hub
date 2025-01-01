@@ -20,7 +20,7 @@ export const Navigation = () => {
               </NavigationMenuList>
             </NavigationMenu>
             <Button 
-              className="bg-sage-50 text-sage-900 hover:bg-sage-100"
+              className="bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
               onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
             >
               Book Now
