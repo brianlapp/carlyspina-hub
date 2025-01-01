@@ -1,11 +1,7 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
 import { Input } from "@/components/ui/input";
 
 export const FooterTeaser = () => {
-  const [showForm, setShowForm] = useState(false);
-
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -20,42 +16,36 @@ export const FooterTeaser = () => {
           <p className="text-sage-600 mb-8">
             Stay connected with upcoming workshops, special offers, and insights into energy healing.
           </p>
-          {!showForm ? (
-            <Button 
-              className="bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
-              onClick={() => setShowForm(true)}
+          <motion.form 
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="max-w-3xl mx-auto flex flex-wrap gap-4 justify-center"
+            name="newsletter"
+            method="POST"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="newsletter" />
+            <Input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              className="flex-1 min-w-[200px]"
+            />
+            <Input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              className="flex-1 min-w-[200px]"
+            />
+            <button 
+              type="submit" 
+              className="bg-emerald-600 text-white px-6 py-2 rounded hover:bg-emerald-700 transition-colors min-w-[120px]"
             >
-              Join Our Mailing List
-            </Button>
-          ) : (
-            <motion.form 
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="max-w-md mx-auto space-y-4"
-              name="newsletter"
-              method="POST"
-              data-netlify="true"
-            >
-              <input type="hidden" name="form-name" value="newsletter" />
-              <Input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                required
-                className="w-full"
-              />
-              <Input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-                className="w-full"
-              />
-              <Button type="submit" className="w-full bg-sage-50 text-sage-900 hover:bg-sage-100">
-                Subscribe
-              </Button>
-            </motion.form>
-          )}
+              Subscribe
+            </button>
+          </motion.form>
         </motion.div>
       </div>
     </section>
