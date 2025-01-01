@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { HeroSlider } from "@/components/HeroSlider";
 import { ServiceCard } from "@/components/ServiceCard";
+import { TestimonialCard } from "@/components/TestimonialCard";
+import Navigation from "@/components/Navigation";
 
 const services = [
   {
@@ -50,14 +51,16 @@ const testimonials = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-sage-50/50">
+      <Navigation />
+      
       {/* Hero Section */}
-      <section className="relative">
+      <section className="relative pt-20">
         <HeroSlider />
       </section>
 
       {/* Introduction Section */}
-      <section className="px-6 py-24 bg-sage-50">
+      <section className="px-6 py-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +76,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="px-6 py-24">
+      <section className="px-6 py-24 bg-gradient-to-b from-white to-sage-50">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -104,7 +107,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="px-6 py-24 bg-sage-50">
+      <section className="px-6 py-24">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -119,20 +122,12 @@ const Index = () => {
           </motion.div>
           <div className="grid gap-8 md:grid-cols-2">
             {testimonials.map((testimonial, index) => (
-              <motion.div
+              <TestimonialCard
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                viewport={{ once: true }}
-              >
-                <Card className="h-full">
-                  <CardContent className="p-6 space-y-4">
-                    <p className="text-earth-600 italic">{testimonial.content}</p>
-                    <p className="text-earth-800 font-semibold">- {testimonial.author}</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
+                content={testimonial.content}
+                author={testimonial.author}
+                delay={index * 0.2}
+              />
             ))}
           </div>
           <div className="text-center mt-12">
@@ -147,8 +142,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Carly Section */}
-      <section className="px-6 py-24">
+      {/* About Section */}
+      <section className="px-6 py-24 bg-gradient-to-b from-sage-50 to-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
