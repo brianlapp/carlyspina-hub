@@ -25,7 +25,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         sage: {
-          50: "#f6f7f6",
+          50: "#F2FCE2",
           100: "#e3e7e3",
           200: "#c6cdc6",
           300: "#a3aea3",
