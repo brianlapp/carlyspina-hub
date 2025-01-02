@@ -42,16 +42,11 @@ export const ServicesSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-semibold section-title mb-6">Explore Our Transformative Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card 
                 key={index} 
-                className={`overflow-hidden border-none w-full max-w-md ${
-                  index >= services.length - (services.length % 3) ? 'lg:col-start-auto' : ''
-                }`}
-                style={{
-                  gridColumn: index >= services.length - (services.length % 3) ? 'auto / span 1' : ''
-                }}
+                className="overflow-hidden border-none w-full max-w-md mx-auto"
               >
                 <div className="aspect-video relative overflow-hidden">
                   <img 
