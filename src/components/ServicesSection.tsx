@@ -42,25 +42,51 @@ export const ServicesSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-semibold section-title mb-6">Explore Our Transformative Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-            {services.map((service, index) => (
-              <Card 
-                key={index} 
-                className="overflow-hidden border-none w-full max-w-md"
-              >
-                <div className="aspect-video relative overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <CardContent className="p-6 text-center">
-                  <h3 className="text-xl font-semibold text-sage-900 mb-2">{service.title}</h3>
-                  <p className="text-sage-600">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* First row - full width on all screens */}
+            <div className="col-span-1 md:col-span-2 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.slice(0, 3).map((service, index) => (
+                <Card 
+                  key={index} 
+                  className="overflow-hidden border-none w-full max-w-md"
+                >
+                  <div className="aspect-video relative overflow-hidden">
+                    <img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <CardContent className="p-6 text-center">
+                    <h3 className="text-xl font-semibold text-sage-900 mb-2">{service.title}</h3>
+                    <p className="text-sage-600">{service.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            {/* Second row - centered on all screens */}
+            <div className="col-span-1 md:col-span-2 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="lg:col-start-2 md:col-start-1 col-span-1 md:col-span-2 lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+                {services.slice(3).map((service, index) => (
+                  <Card 
+                    key={index + 3} 
+                    className="overflow-hidden border-none w-full max-w-md"
+                  >
+                    <div className="aspect-video relative overflow-hidden">
+                      <img 
+                        src={service.image} 
+                        alt={service.title}
+                        className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <CardContent className="p-6 text-center">
+                      <h3 className="text-xl font-semibold text-sage-900 mb-2">{service.title}</h3>
+                      <p className="text-sage-600">{service.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
           </div>
           <Button size="lg" className="mt-8 bg-emerald-600 hover:bg-emerald-700 text-white">Learn More About Our Services</Button>
         </motion.div>
