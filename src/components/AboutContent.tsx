@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { CallToAction } from "@/components/CallToAction";
 
 export const AboutContent = () => {
   const introText = [
@@ -124,30 +125,14 @@ export const AboutContent = () => {
           </motion.div>
         </div>
         
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="mt-12 flex flex-col sm:flex-row gap-4 justify-center"
-        >
-          <Button 
-            className="bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
-            onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
-          >
-            Book With Carly Spina
-          </Button>
-          <Button 
-            variant="outline"
-            className="border-emerald-600 text-emerald-600 hover:bg-emerald-50"
-            onClick={() => {
+        <div className="mt-12">
+          <CallToAction 
+            onSecondaryClick={() => {
               const element = document.querySelector('form[name="newsletter"]');
               element?.scrollIntoView({ behavior: 'smooth' });
             }}
-          >
-            Join Our Mailing List
-          </Button>
-        </motion.div>
+          />
+        </div>
       </motion.div>
     </section>
   );
