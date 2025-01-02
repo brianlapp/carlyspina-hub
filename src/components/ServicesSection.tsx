@@ -42,9 +42,9 @@ export const ServicesSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-semibold section-title mb-6">Explore Our Transformative Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 [&>*:last-child]:lg:col-span-3 [&>*:last-child]:lg:mx-auto [&>*:last-child]:lg:max-w-md">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {services.map((service, index) => (
-              <Card key={index} className="overflow-hidden border-none">
+              <Card key={index} className="overflow-hidden border-none w-full max-w-md">
                 <div className="aspect-video relative overflow-hidden">
                   <img 
                     src={service.image} 
