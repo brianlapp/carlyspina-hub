@@ -12,13 +12,44 @@ export const AboutContent = () => {
   ];
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 bg-sage-50">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
         className="container mx-auto max-w-4xl"
       >
+        <div className="grid md:grid-cols-2 gap-12 mb-12">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="relative group"
+          >
+            <div className="absolute inset-0 bg-emerald-200/20 rounded-2xl transform -rotate-3 transition-transform group-hover:rotate-0" />
+            <img
+              src="/lovable-uploads/f96317dc-e3da-4419-9f9a-200143db7669.png"
+              alt="Carly Spina"
+              className="rounded-2xl relative z-10 w-full h-full object-cover transform transition-transform group-hover:scale-[1.02]"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="relative group mt-12 md:mt-24"
+          >
+            <div className="absolute inset-0 bg-emerald-200/20 rounded-2xl transform rotate-3 transition-transform group-hover:rotate-0" />
+            <img
+              src="/lovable-uploads/6b2d2326-1b63-4d8a-aad6-6231146c118f.png"
+              alt="Carly Spina"
+              className="rounded-2xl relative z-10 w-full h-full object-cover transform transition-transform group-hover:scale-[1.02]"
+            />
+          </motion.div>
+        </div>
+
         <div className="space-y-6">
           {paragraphs.map((text, index) => (
             <motion.p
