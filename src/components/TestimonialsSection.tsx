@@ -61,7 +61,7 @@ export const TestimonialsSection = () => {
               </div>
             </Carousel>
           </div>
-          <Button className="mt-12 bg-emerald-600 hover:bg-emerald-700 text-white">Read More Testimonials</Button>
+          <Button size="lg" className="mt-12 bg-emerald-600 hover:bg-emerald-700 text-white">Read More Testimonials</Button>
         </motion.div>
       </div>
     </section>
