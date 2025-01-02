@@ -6,27 +6,27 @@ const services = [
   {
     title: "Spinal Energetics",
     description: "Align your physical and energetic self for lasting balance.",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    image: "public/lovable-uploads/Spinal-Energetics.png"
   },
   {
     title: "Reiki",
     description: "Harness universal energy to restore harmony and vitality.",
-    image: "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    image: "public/lovable-uploads/Reiki.png"
   },
   {
     title: "Reiki Training",
     description: "Embark on a journey to become a certified Reiki practitioner.",
-    image: "https://images.unsplash.com/photo-1514845505178-849cebf1a91d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    image: "public/lovable-uploads/Reiki-Training.png"
   },
   {
     title: "Akashic Records Reading",
     description: "Gain clarity and insight into your soul's journey.",
-    image: "https://images.unsplash.com/photo-1606336434394-e6c9ed516f59?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    image: "public/lovable-uploads/Akashic-Records-Reading.png"
   },
   {
     title: "Workshops",
     description: "Join us for group sessions on spinal energetics, restorative yoga, Reiki, and sound bath.",
-    image: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    image: "public/lovable-uploads/workshops.png"
   },
 ];
 
