@@ -12,7 +12,7 @@ export const FooterTeaser = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl font-semibold text-sage-900 mb-6">Stay Connected</h2>
+          <h2 className="text-3xl font-semibold section-title mb-6">Stay Connected</h2>
           <p className="text-sage-600 mb-8">
             Stay connected with upcoming workshops, special offers, and insights into energy healing.
           </p>

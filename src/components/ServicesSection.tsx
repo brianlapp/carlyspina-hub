@@ -6,27 +6,27 @@ const services = [
   {
     title: "Spinal Energetics",
     description: "Align your physical and energetic self for lasting balance.",
-    image: "/lovable-uploads/Spinal-Energetics.png"  // Remove 'public'
+    image: "/lovable-uploads/Spinal-Energetics.png"
   },
   {
     title: "Reiki",
     description: "Harness universal energy to restore harmony and vitality.",
-    image: "/lovable-uploads/Reiki.png"  // Remove 'public'
+    image: "/lovable-uploads/Reiki.png"
   },
   {
     title: "Reiki Training",
     description: "Embark on a journey to become a certified Reiki practitioner.",
-    image: "/lovable-uploads/Reiki-Training.png"  // Remove 'public'
+    image: "/lovable-uploads/Reiki-Training.png"
   },
   {
     title: "Akashic Records Reading",
     description: "Gain clarity and insight into your soul's journey.",
-    image: "/lovable-uploads/Akashic-Records-Reading.png"  // Remove 'public'
+    image: "/lovable-uploads/Akashic-Records-Reading.png"
   },
   {
     title: "Workshops",
     description: "Join us for group sessions on spinal energetics, restorative yoga, Reiki, and sound bath.",
-    image: "/lovable-uploads/workshops.png"  // Remove 'public'
+    image: "/lovable-uploads/workshops.png"
   },
 ];
 
@@ -41,7 +41,7 @@ export const ServicesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-semibold text-sage-900 mb-6">Explore Our Transformative Services</h2>
+          <h2 className="text-3xl font-semibold section-title mb-6">Explore Our Transformative Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="overflow-hidden border-none">

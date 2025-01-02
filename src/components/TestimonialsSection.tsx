@@ -34,7 +34,7 @@ export const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl font-semibold text-gray-900 mb-12">Here's What Clients Are Saying</h2>
+          <h2 className="text-3xl font-semibold section-title mb-12">Here's What Clients Are Saying</h2>
           <div className="max-w-5xl mx-auto">
             <Carousel
               opts={{
