@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { CallToAction } from "@/components/CallToAction";
+import { ContentSection } from "./spinal-energetics/ContentSection";
+import { SectionTitle } from "./spinal-energetics/SectionTitle";
+import { BookingCard } from "./spinal-energetics/BookingCard";
 
 export const SpinalEnergeticsContent = () => {
   const sections = [
@@ -81,54 +83,15 @@ export const SpinalEnergeticsContent = () => {
     <div className="py-16 bg-gradient-to-b from-white to-sage-50">
       <div className="container mx-auto px-4">
         {sections.map((section, index) => (
-          <motion.div
+          <ContentSection
             key={section.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            viewport={{ once: true }}
-            className="mb-24"
-          >
-            <div className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}>
-              <div className="lg:w-1/2">
-                <h2 className="text-3xl font-semibold mb-6 text-sage-900 section-title">{section.title}</h2>
-                {section.content.map((paragraph, pIndex) => (
-                  <p key={pIndex} className="text-lg text-sage-600 mb-4 leading-relaxed">
-                    {paragraph}
-                  </p>
-                ))}
-                
-                {section.showButton && (
-                  <div className="mt-8">
-                    <Button 
-                      className="bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
-                      onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
-                    >
-                      Book Your Session Now
-                    </Button>
-                  </div>
-                )}
-              </div>
-              
-              {section.image && (
-                <div className="lg:w-1/2">
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
-                    viewport={{ once: true }}
-                    className="rounded-2xl overflow-hidden shadow-lg"
-                  >
-                    <img 
-                      src={section.image} 
-                      alt={section.imageAlt}
-                      className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
-                    />
-                  </motion.div>
-                </div>
-              )}
-            </div>
-          </motion.div>
+            title={section.title}
+            content={section.content}
+            image={section.image}
+            imageAlt={section.imageAlt}
+            showButton={section.showButton}
+            reverse={index % 2 !== 0}
+          />
         ))}
 
         <motion.div
@@ -138,14 +101,14 @@ export const SpinalEnergeticsContent = () => {
           viewport={{ once: true }}
           className="mb-24 bg-white rounded-2xl p-8 shadow-lg"
         >
-          <h2 className="text-3xl font-semibold mb-6 text-sage-900 section-title">{benefits.title}</h2>
+          <SectionTitle>{benefits.title}</SectionTitle>
           {benefits.content.map((paragraph, pIndex) => (
-            <p key={pIndex} className="text-lg text-sage-600 mb-6">
+            <p key={pIndex} className="text-lg text-sage-600 mb-6 px-8">
               {paragraph}
             </p>
           ))}
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-8 px-8">
             {benefits.lists.map((list, lIndex) => (
               <div key={lIndex} className="bg-sage-50 rounded-xl p-6">
                 <h3 className="text-xl font-semibold mb-4 text-sage-800">{list.title}</h3>
@@ -176,17 +139,6 @@ export const SpinalEnergeticsContent = () => {
               />
             </motion.div>
           )}
-
-          {benefits.showButton && (
-            <div className="text-center mt-8">
-              <Button 
-                className="bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
-                onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
-              >
-                Book Your Session Now
-              </Button>
-            </div>
-          )}
         </motion.div>
 
         <motion.div
@@ -194,9 +146,9 @@ export const SpinalEnergeticsContent = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="mb-24"
+          className="mb-24 px-8"
         >
-          <h2 className="text-3xl font-semibold mb-6 text-sage-900 section-title">Who Can Benefit from Spinal Energetics?</h2>
+          <SectionTitle>Who Can Benefit from Spinal Energetics?</SectionTitle>
           <p className="text-lg text-sage-600 mb-6">
             Spinal Energetics is suitable for individuals seeking holistic healing, whether addressing specific physical issues or pursuing overall well-being. This modality can benefit:
           </p>
@@ -220,27 +172,15 @@ export const SpinalEnergeticsContent = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="mb-24"
+          className="mb-24 px-8"
         >
-          <h2 className="text-3xl font-semibold mb-6 text-sage-900 section-title">Why Choose Spinal Energetics?</h2>
+          <SectionTitle>Why Choose Spinal Energetics?</SectionTitle>
           <p className="text-lg text-sage-600 mb-8">
             Spinal Energetics goes beyond conventional approaches to healing by addressing the root causes of imbalance. It acknowledges the interconnectedness of your physical, emotional, and energetic systems, empowering you to reclaim your health and vitality in a profound and lasting way.
           </p>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
-          <h2 className="text-3xl font-semibold mb-6 text-sage-900 section-title">Book Your Session Today</h2>
-          <p className="text-lg text-sage-600 mb-8">
-            Are you ready to unlock the power of your body's innate wisdom? Experience the transformative benefits of Spinal Energetics with Carly Spina. Each session is a journey towards holistic wellness, tailored to your unique needs and goals.
-          </p>
-          <CallToAction />
-        </motion.div>
+        <BookingCard />
       </div>
     </div>
   );
