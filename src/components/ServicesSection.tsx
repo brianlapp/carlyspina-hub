@@ -7,31 +7,41 @@ export const ServicesSection = () => {
       title: "Spinal Energetics",
       description: "Experience deep healing through this innovative modality that combines physical and energetic alignment.",
       image: "/lovable-uploads/Spinal-Energetics.png",
-      link: "/spinal-energetics"
+      link: "/spinal-energetics",
+      icon: "sparkles",
+      delay: 0.2
     },
     {
       title: "Reiki",
       description: "Restore balance and promote healing with this gentle yet powerful energy healing technique.",
       image: "/lovable-uploads/Reiki.png",
-      link: "#"
+      link: "#",
+      icon: "leaf",
+      delay: 0.4
     },
     {
       title: "Akashic Records Reading",
       description: "Gain insight and clarity by accessing the wisdom of your soul's journey.",
       image: "/lovable-uploads/Akashic-Records-Reading.png",
-      link: "#"
+      link: "#",
+      icon: "book",
+      delay: 0.6
     },
     {
       title: "Reiki Training",
       description: "Learn to channel healing energy and become a certified Reiki practitioner.",
       image: "/lovable-uploads/Reiki-Training.png",
-      link: "#"
+      link: "#",
+      icon: "graduation",
+      delay: 0.8
     },
     {
       title: "Workshops",
       description: "Join group sessions focused on spiritual growth and energy healing techniques.",
       image: "/lovable-uploads/workshops.png",
-      link: "#"
+      link: "#",
+      icon: "users",
+      delay: 1.0
     }
   ];
 
