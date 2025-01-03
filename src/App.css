@@ -48,9 +48,12 @@
 }
 
 .section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
   background: linear-gradient(135deg, #34d399 0%, #059669 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   display: inline-block;
+  margin-bottom: 1.5rem;
 }
