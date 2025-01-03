@@ -1,7 +1,23 @@
 import { motion } from "framer-motion";
 import { Input } from "@/components/ui/input";
+import { useEffect } from "react";
+import { useToast } from "@/components/ui/use-toast";
 
 export const FooterTeaser = () => {
+  const { toast } = useToast();
+
+  useEffect(() => {
+    // Load Campaign Monitor script
+    const script = document.createElement('script');
+    script.src = "https://js.createsend1.com/javascript/copypastesubscribeformlogic.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -19,25 +35,30 @@ export const FooterTeaser = () => {
           <motion.form 
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="max-w-3xl mx-auto flex flex-wrap gap-4 justify-center"
-            name="newsletter"
-            method="POST"
-            data-netlify="true"
+            className="js-cm-form max-w-3xl mx-auto flex flex-wrap gap-4 justify-center"
+            id="subForm"
+            action="https://www.createsend.com/t/subscribeerror?description="
+            method="post"
+            data-id="A61C50BEC994754B1D79C5819EC1255C7141A92B304A9377C8C065101967D8AAC28645E0F69C313EB6958FCC7D5C43FB26899D32CF316DB2E6F119F822628832"
           >
-            <input type="hidden" name="form-name" value="newsletter" />
             <Input
               type="text"
-              name="name"
+              id="fieldName"
+              name="cm-name"
               placeholder="Your Name"
+              maxLength={200}
               required
               className="flex-1 min-w-[200px]"
             />
             <Input
               type="email"
-              name="email"
+              id="fieldEmail"
+              name="cm-tjiythy-tjiythy"
               placeholder="Your Email"
+              maxLength={200}
               required
-              className="flex-1 min-w-[200px]"
+              className="js-cm-email-input qa-input-email flex-1 min-w-[200px]"
+              autoComplete="email"
             />
             <button 
               type="submit" 
