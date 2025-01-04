@@ -7,7 +7,7 @@ export const HeroSection = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("/lovable-uploads/6e73e5d4-c94c-4c3f-8ff1-b421f6d24323.png")',
+          backgroundImage: `url("${window.innerWidth <= 768 ? '/lovable-uploads/990af7ba-decc-4dbe-89ca-5eacc7d25eb6.png' : '/lovable-uploads/6e73e5d4-c94c-4c3f-8ff1-b421f6d24323.png'}")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
