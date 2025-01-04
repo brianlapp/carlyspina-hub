@@ -12,8 +12,8 @@ const workshops = [
       "Deepen the connection between mind and body",
       "Foster a sense of community and shared healing"
     ],
-    image: "https://images.unsplash.com/photo-1573126617899-41f1dffb196c?q=80&w=2070&auto=format&fit=crop",
-    imageAlt: "Group meditation circle in a peaceful studio setting with soft natural lighting, showing participants connected in healing energy"
+    image: "/lovable-uploads/52eb17e6-e9b6-45b2-93b3-6f8522e67885.png",
+    imageAlt: "Serene yoga studio with arched windows and natural light, showing a group meditation circle on yoga mats with sunbeams streaming through the windows"
   },
   {
     title: "Restorative Yoga",
@@ -24,8 +24,8 @@ const workshops = [
       "Balance the body's energy systems",
       "Cultivate mindfulness and inner calm"
     ],
-    image: "/lovable-uploads/52eb17e6-e9b6-45b2-93b3-6f8522e67885.png",
-    imageAlt: "Serene yoga studio with arched windows and natural light, showing a group meditation circle on yoga mats with sunbeams streaming through the windows"
+    image: "/lovable-uploads/529063fd-0b09-46c7-831f-ca3f51f08878.png",
+    imageAlt: "Peaceful yoga studio with warm lighting and wooden floors, showing participants in restorative poses using bolsters and props, surrounded by plants and natural decor"
   },
   {
     title: "Reiki in a Group Setting",
