@@ -13,7 +13,7 @@ export const NavigationItems = ({ items, currentPath, onClick }: NavigationItems
         <Link
           key={item.name}
           to={item.path}
-          className={`text-lg px-2 py-2 rounded-md transition-colors ${
+          className={`text-base px-2 py-2 rounded-md transition-colors ${
             currentPath === item.path 
               ? "bg-sage-50 text-sage-900 font-medium" 
               : "text-sage-600 hover:text-sage-900 hover:bg-sage-50"
