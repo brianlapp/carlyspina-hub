@@ -8,9 +8,9 @@ export const HeroSection = () => {
   return (
     <section className="relative pt-32 pb-20 px-4 min-h-[80vh] flex items-center">
       <div 
-        className="absolute inset-0 z-0 bg-sage-900"
+        className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60")',
+          backgroundImage: `url(${window.innerWidth < 768 ? "/lovable-uploads/b36d6b97-499c-4ccb-beb4-f302f53400dc.png" : "https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100%',
