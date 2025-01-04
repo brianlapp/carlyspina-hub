@@ -31,8 +31,8 @@ export const SpinalEnergeticsContent = () => {
       content: [
         "During our session, I will support and honor your individual needs while working with you to reach homeostasis, moving you towards overall wellness. Through light yet powerful touch (and often no touch), I will interact with your spine, nervous system, and energetic field, harnessing your own innate wisdom to know and heal yourself. An organic flow of movement and sound will naturally progress, helping to shift, unwind, and release tension, resistance, and stories stored within the body. These natural, primordial movements and sounds are driven by your energy, intuition, and instinct, creating a unique and transformative experience."
       ],
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
-      imageAlt: "Peaceful nature scene representing healing",
+      image: "/lovable-uploads/47ada071-774c-4c37-b26e-a5d826e0e14a.png",
+      imageAlt: "Artistic representation of healing energy work with golden light and flowing energy patterns",
     }
   ];
 
