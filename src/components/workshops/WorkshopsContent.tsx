@@ -12,7 +12,8 @@ const workshops = [
       "Deepen the connection between mind and body",
       "Foster a sense of community and shared healing"
     ],
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+    imageAlt: "Group meditation session in a peaceful environment"
   },
   {
     title: "Restorative Yoga",
@@ -23,7 +24,8 @@ const workshops = [
       "Balance the body's energy systems",
       "Cultivate mindfulness and inner calm"
     ],
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    imageAlt: "Peaceful yoga studio with natural light"
   },
   {
     title: "Reiki in a Group Setting",
@@ -34,7 +36,8 @@ const workshops = [
       "Enhance mental clarity and focus",
       "Strengthen spiritual connection and intuition"
     ],
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    imageAlt: "Serene natural setting representing healing energy"
   },
   {
     title: "Sound Bath",
@@ -45,13 +48,14 @@ const workshops = [
       "Balance the chakras and energy fields",
       "Induce a meditative state and enhance mindfulness"
     ],
-    image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04"
+    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
+    imageAlt: "Peaceful setting with sound healing instruments"
   }
 ];
 
 export const WorkshopsContent = () => {
   return (
-    <div className="py-20 bg-sage-50/30">
+    <div className="py-20 bg-gradient-to-b from-white to-sage-50">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -89,7 +93,7 @@ export const WorkshopsContent = () => {
                 <div className="aspect-video relative overflow-hidden">
                   <img 
                     src={workshop.image} 
-                    alt={workshop.title}
+                    alt={workshop.imageAlt}
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
                   />
                 </div>
