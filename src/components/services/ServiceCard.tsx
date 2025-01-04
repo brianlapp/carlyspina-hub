@@ -17,22 +17,25 @@ export const ServiceCard = ({ title, description, image, index, path, delay }: S
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: delay || index * 0.1 }}
+        transition={{ duration: 0.5, delay: delay || 0 }}
         viewport={{ once: true }}
         className="h-full"
       >
         <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
-          <div className="aspect-video relative overflow-hidden">
+          <div className="relative w-full aspect-[16/9]">
             <img 
               src={image} 
               alt={title}
+              width={640}
+              height={360}
+              loading="lazy"
               className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
             />
           </div>
-          <CardContent className="p-6 text-center bg-white flex-grow flex flex-col justify-between">
+          <CardContent className="p-4 md:p-6 text-center bg-white flex-grow flex flex-col justify-between">
             <div>
-              <h3 className="text-xl font-semibold text-sage-900 mb-2">{title}</h3>
-              <p className="text-sage-600">{description}</p>
+              <h3 className="text-lg md:text-xl font-semibold text-sage-900 mb-2">{title}</h3>
+              <p className="text-sm md:text-base text-sage-600">{description}</p>
             </div>
           </CardContent>
         </Card>
