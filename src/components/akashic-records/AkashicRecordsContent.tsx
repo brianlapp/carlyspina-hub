@@ -88,80 +88,82 @@ export const AkashicRecordsContent = () => {
 
   return (
     <div className="bg-gradient-to-b from-white to-sage-50 pt-16 md:pt-24">
-      {sections.map((section, index) => (
-        <ContentSection
-          key={section.title}
-          title={section.title}
-          content={section.content}
-          image={section.image}
-          imageAlt={section.imageAlt}
-          showButton={section.showButton}
-          reverse={section.reverse}
-        />
-      ))}
+      <div className="container mx-auto">
+        {sections.map((section, index) => (
+          <ContentSection
+            key={section.title}
+            title={section.title}
+            content={section.content}
+            image={section.image}
+            imageAlt={section.imageAlt}
+            showButton={section.showButton}
+            reverse={section.reverse}
+          />
+        ))}
 
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24"
-      >
-        <SectionTitle>Benefits of an Akashic Records Reading</SectionTitle>
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-16">
-          {benefits.map((benefit, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <Card className="p-6 md:p-8 h-full bg-white/80 backdrop-blur-sm border-sage-200 hover:shadow-lg transition-all duration-300">
-                <h3 className="text-xl md:text-2xl font-semibold text-sage-800 mb-4">{benefit.title}</h3>
-                <ul className="space-y-3">
-                  {benefit.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="text-sage-600 flex items-start text-base md:text-lg">
-                      <span className="mr-3 mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-gradient-to-r from-emerald-400 to-emerald-500" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24"
+        >
+          <SectionTitle>Benefits of an Akashic Records Reading</SectionTitle>
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-16">
+            {benefits.map((benefit, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Card className="p-6 md:p-8 h-full bg-white/80 backdrop-blur-sm border-sage-200 hover:shadow-lg transition-all duration-300">
+                  <h3 className="text-xl md:text-2xl font-semibold text-sage-800 mb-4">{benefit.title}</h3>
+                  <ul className="space-y-3">
+                    {benefit.items.map((item, itemIndex) => (
+                      <li key={itemIndex} className="text-sage-600 flex items-start text-base md:text-lg">
+                        <span className="mr-3 mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-gradient-to-r from-emerald-400 to-emerald-500" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
 
-        <SectionTitle>Frequently Asked Questions</SectionTitle>
-        <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto mb-16">
-          {faqs.map((faq, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <AccordionItem value={`item-${index}`} className="border-sage-200">
-                <AccordionTrigger className="text-left text-lg md:text-xl font-medium text-sage-800 hover:text-sage-900 hover:no-underline px-4">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-sage-600 px-4 text-base md:text-lg">
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    {faq.answer}
-                  </motion.div>
-                </AccordionContent>
-              </AccordionItem>
-            </motion.div>
-          ))}
-        </Accordion>
+          <SectionTitle>Frequently Asked Questions</SectionTitle>
+          <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto mb-16">
+            {faqs.map((faq, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <AccordionItem value={`item-${index}`} className="border-sage-200">
+                  <AccordionTrigger className="text-left text-lg md:text-xl font-medium text-sage-800 hover:text-sage-900 hover:no-underline px-4">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sage-600 px-4 text-base md:text-lg">
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      {faq.answer}
+                    </motion.div>
+                  </AccordionContent>
+                </AccordionItem>
+              </motion.div>
+            ))}
+          </Accordion>
 
-        <BookingCard />
-      </motion.section>
+          <BookingCard />
+        </motion.section>
+      </div>
     </div>
   );
 };
