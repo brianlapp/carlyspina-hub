@@ -36,6 +36,10 @@ const services = [
 ];
 
 export const ServicesSection = () => {
+  const handleBookNow = () => {
+    window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank');
+  };
+
   return (
     <section id="services-section" className="py-24 bg-gradient-to-b from-white via-sage-50/30 to-sage-100/20">
       <div className="container mx-auto px-4">
@@ -64,7 +68,7 @@ export const ServicesSection = () => {
             <Button 
               size="lg" 
               className="mt-16 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto shadow-lg hover:shadow-xl transition-all duration-300"
-              onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+              onClick={handleBookNow}
             >
               Book Now
             </Button>
