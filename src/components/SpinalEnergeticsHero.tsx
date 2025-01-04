@@ -7,7 +7,7 @@ export const SpinalEnergeticsHero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("/lovable-uploads/61801c01-93d2-4f03-861b-8c3c984ec7a6.png")',
+          backgroundImage: 'url("/lovable-uploads/356eac2f-de6d-49f5-b6ac-62eed6e4f840.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
