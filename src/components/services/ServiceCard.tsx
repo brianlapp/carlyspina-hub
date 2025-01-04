@@ -15,8 +15,9 @@ export const ServiceCard = ({ title, description, image, index }: ServiceCardPro
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
+      className="h-full" // Added to ensure full height
     >
-      <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col"> {/* Added h-full and flex flex-col */}
         <div className="aspect-video relative overflow-hidden">
           <img 
             src={image} 
@@ -24,9 +25,11 @@ export const ServiceCard = ({ title, description, image, index }: ServiceCardPro
             className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <CardContent className="p-6 text-center bg-white">
-          <h3 className="text-xl font-semibold text-sage-900 mb-2">{title}</h3>
-          <p className="text-sage-600">{description}</p>
+        <CardContent className="p-6 text-center bg-white flex-grow flex flex-col justify-between"> {/* Added flex-grow and flex properties */}
+          <div>
+            <h3 className="text-xl font-semibold text-sage-900 mb-2">{title}</h3>
+            <p className="text-sage-600">{description}</p>
+          </div>
         </CardContent>
       </Card>
     </motion.div>

@@ -16,7 +16,7 @@ const services = [
   {
     title: "Reiki Training",
     description: "Embark on a journey to become a certified Reiki practitioner.",
-    image: "/lovable-uploads/Reiki-Training.png"
+    image: "/lovable-uploads/27c85602-474e-4829-9e00-d918ab0bde21.png" // Updated image
   },
   {
     title: "Akashic Records Reading",
