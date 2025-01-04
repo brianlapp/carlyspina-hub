@@ -28,7 +28,14 @@ export const Navigation = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-auto flex justify-between items-center">
-            <Link to="/" className="text-2xl font-semibold text-sage-900">CarlySpina.com</Link>
+            <Link to="/" className="flex items-center gap-2 text-2xl font-semibold text-sage-900">
+              <img 
+                src="/lovable-uploads/a3eb6f31-b574-46c0-b96a-3449a3bea46e.png" 
+                alt="Lotus" 
+                className="h-8 w-auto"
+              />
+              <span>CarlySpina.com</span>
+            </Link>
             
             <Sheet>
               <SheetTrigger asChild className="md:hidden">
