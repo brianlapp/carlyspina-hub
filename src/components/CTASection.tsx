@@ -2,6 +2,17 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 export const CTASection = () => {
+  const scrollToServices = () => {
+    const servicesSection = document.querySelector('#services-section');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleBookNow = () => {
+    window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank');
+  };
+
   return (
     <section className="relative py-32">
       <div 
@@ -27,8 +38,17 @@ export const CTASection = () => {
             Explore our services or book a session today. Your path to wellness begins here.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto">Book Now</Button>
-            <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-emerald-700 px-12 py-6 text-lg h-auto">
+            <Button 
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto"
+              onClick={handleBookNow}
+            >
+              Book Now
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-white text-white bg-white/10 hover:bg-emerald-700 px-12 py-6 text-lg h-auto"
+              onClick={scrollToServices}
+            >
               Explore Services
             </Button>
           </div>
