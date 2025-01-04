@@ -30,7 +30,6 @@ export const Navigation = () => {
           <div className="w-full md:w-auto flex justify-between items-center">
             <Link to="/" className="text-2xl font-semibold text-sage-900">CarlySpina.com</Link>
             
-            {/* Mobile Menu Button */}
             <Sheet>
               <SheetTrigger asChild className="md:hidden">
                 <Button variant="ghost" size="icon">
@@ -86,7 +85,7 @@ export const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4">
             <NavigationMenu>
-              <NavigationMenuList>
+              <NavigationMenuList className="gap-4">
                 {navItems.map((item) => (
                   <NavigationMenuItem key={item.name}>
                     <Link 
