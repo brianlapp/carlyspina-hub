@@ -6,12 +6,12 @@ export const WorkshopsHero = () => {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1501854140801-50d01698950b')",
+          backgroundImage: "url('/lovable-uploads/4a264193-201c-4481-9fd9-3d48eb773d9b.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10 text-center py-20">
