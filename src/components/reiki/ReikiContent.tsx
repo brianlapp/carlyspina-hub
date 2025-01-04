@@ -33,8 +33,8 @@ export const ReikiContent = () => {
         "• Gentle warmth or tingling sensations\n• A sense of deep relaxation and calm\n• Emotional releases or insights\n• A feeling of lightness or renewed energy",
         "Each session is unique and unfolds according to your body's natural rhythm and healing priorities."
       ],
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
-      imageAlt: "Peaceful healing session",
+      image: "/lovable-uploads/4e2133d2-4c1f-4977-8411-0148711ed6a7.png",
+      imageAlt: "Serene Reiki healing session environment with ethereal energy visualization and meditation elements",
       showButton: true
     }
   ];
