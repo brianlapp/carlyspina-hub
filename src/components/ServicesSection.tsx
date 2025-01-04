@@ -41,7 +41,7 @@ export const ServicesSection = () => {
   };
 
   return (
-    <section id="services-section" className="py-24 bg-gradient-to-b from-white via-sage-50/30 to-sage-100/20">
+    <section id="services-section" className="py-16 md:py-20 bg-gradient-to-b from-white via-sage-50/30 to-sage-100/20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -67,7 +67,7 @@ export const ServicesSection = () => {
           >
             <Button 
               size="lg" 
-              className="mt-16 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto shadow-lg hover:shadow-xl transition-all duration-300"
+              className="mt-12 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={handleBookNow}
             >
               Book Now
