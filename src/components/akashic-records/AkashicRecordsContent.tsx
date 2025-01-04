@@ -57,24 +57,17 @@ export const AkashicRecordsContent = () => {
 
   return (
     <div className="bg-gradient-to-b from-sage-50 to-white">
-      <div className="container mx-auto px-4">
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="py-16 md:py-24 bg-white rounded-2xl shadow-sm mb-16"
-        >
-          <h2 className="text-3xl font-bold text-sage-900 mb-6">What Are the Akashic Records?</h2>
-          <div className="grid md:grid-cols-1 gap-12 items-center">
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/Akashic-Records-Reading.png"
-                alt="Akashic Records Reading"
-                className="rounded-lg shadow-xl w-full object-cover aspect-[16/9] mb-8"
-              />
-            </div>
+      <motion.section
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="w-full bg-white py-16 md:py-24"
+      >
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
+              <h2 className="text-3xl font-bold text-sage-900 mb-6">What Are the Akashic Records?</h2>
               <p className="text-lg text-sage-600 mb-8">
                 The Akashic Records are a metaphysical database containing the energetic imprint of every thought, emotion, action, and experience that has ever occurred in the universe. Often described as a cosmic library or a spiritual archive, the Akashic Records hold the blueprint of your soul—including past lives, present experiences, and future possibilities.
               </p>
@@ -86,9 +79,18 @@ export const AkashicRecordsContent = () => {
                 Book Your Reading Now
               </Button>
             </div>
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/Akashic-Records-Reading.png"
+                alt="Akashic Records Reading"
+                className="rounded-lg shadow-xl w-full object-cover aspect-[16/9]"
+              />
+            </div>
           </div>
-        </motion.section>
+        </div>
+      </motion.section>
 
+      <div className="container mx-auto px-4">
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
