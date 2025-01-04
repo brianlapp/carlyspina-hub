@@ -1,13 +1,15 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Carousel,
-  CarouselApi,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { cn } from "@/lib/utils";
 
 const testimonials = [
   {
@@ -33,7 +35,7 @@ const testimonials = [
 ];
 
 function Testimonials() {
-  const [api, setApi] = useState<CarouselApi>();
+  const [api, setApi] = useState<any>();
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -41,16 +43,12 @@ function Testimonials() {
       return;
     }
 
-    setTimeout(() => {
-      if (api.selectedScrollSnap() + 1 === api.scrollSnapList().length) {
-        setCurrent(0);
-        api.scrollTo(0);
-      } else {
-        api.scrollNext();
-        setCurrent(current + 1);
-      }
-    }, 4000);
-  }, [api, current]);
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
+  const scrollTo = (index: number) => api?.scrollTo(index);
 
   return (
     <div className="w-full py-20 lg:py-40 bg-gradient-to-b from-sage-50/50 to-transparent">
@@ -97,7 +95,27 @@ function Testimonials() {
                 </CarouselItem>
               ))}
             </CarouselContent>
+            <div className="hidden md:block">
+              <CarouselPrevious className="-left-12 bg-emerald-600 hover:bg-emerald-700 text-white" />
+              <CarouselNext className="-right-12 bg-emerald-600 hover:bg-emerald-700 text-white" />
+            </div>
           </Carousel>
+          
+          <div className="flex justify-center gap-2 mt-8">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => scrollTo(index)}
+                className={cn(
+                  "h-2.5 w-2.5 rounded-full transition-all duration-300",
+                  current === index 
+                    ? "bg-emerald-600 w-4" 
+                    : "bg-emerald-200 hover:bg-emerald-300"
+                )}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
