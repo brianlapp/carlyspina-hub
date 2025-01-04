@@ -126,7 +126,7 @@ export const WorkshopsContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12"
+            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-sage-200/50 shadow-sm"
           >
             <h2 className="text-3xl font-bold mb-6 text-sage-900">How Do Our Workshops Work?</h2>
             <p className="text-sage-600 mb-4">
@@ -139,7 +139,7 @@ export const WorkshopsContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12"
+            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-sage-200/50 shadow-sm"
           >
             <h2 className="text-3xl font-bold mb-6 text-sage-900">Why Choose Group Healing Workshops?</h2>
             <p className="text-sage-600 mb-4">
@@ -158,7 +158,7 @@ export const WorkshopsContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12"
+            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-sage-200/50 shadow-sm"
           >
             <h2 className="text-3xl font-bold mb-6 text-sage-900">Who Are These Workshops For?</h2>
             <p className="text-sage-600 mb-4">Our workshops are perfect for:</p>
