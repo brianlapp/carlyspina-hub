@@ -8,10 +8,10 @@ export const IntroSection = () => {
     window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank');
   };
 
-  const scrollToServices = () => {
-    const servicesSection = document.querySelector('#services-section');
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToAbout = () => {
+    const aboutSection = document.querySelector('#about-section');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -61,12 +61,12 @@ export const IntroSection = () => {
               Book Now
             </Button>
             <Button 
-              onClick={scrollToServices}
+              onClick={scrollToAbout}
               variant="outline"
               className="border-emerald-600 text-emerald-600 hover:bg-emerald-50"
               size="lg"
             >
-              Explore Services
+              Learn More
             </Button>
           </div>
         </motion.div>
