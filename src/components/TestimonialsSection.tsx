@@ -34,7 +34,9 @@ export const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl font-semibold section-title mb-12">Here's What Clients Are Saying</h2>
+          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+            Here's What Clients Are Saying
+          </h2>
           <div className="max-w-5xl mx-auto">
             <Carousel
               opts={{
@@ -61,7 +63,12 @@ export const TestimonialsSection = () => {
               </div>
             </Carousel>
           </div>
-          <Button size="lg" className="mt-12 bg-emerald-600 hover:bg-emerald-700 text-white">Read More Testimonials</Button>
+          <Button 
+            size="lg" 
+            className="mt-12 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto"
+          >
+            Read More Testimonials
+          </Button>
         </motion.div>
       </div>
     </section>

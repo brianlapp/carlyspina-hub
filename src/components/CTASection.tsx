@@ -22,13 +22,13 @@ export const CTASection = () => {
           viewport={{ once: true }}
           className="text-center relative z-10"
         >
-          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-6">Ready to Take the Next Step?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Take the Next Step?</h2>
           <p className="text-white/90 text-xl mb-8 max-w-2xl mx-auto">
             Explore our services or book a session today. Your path to wellness begins here.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">Book Now</Button>
-            <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-emerald-700">
+            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto">Book Now</Button>
+            <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-emerald-700 px-12 py-6 text-lg h-auto">
               Explore Services
             </Button>
           </div>

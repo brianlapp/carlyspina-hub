@@ -41,7 +41,9 @@ export const ServicesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-semibold section-title mb-6">Explore Our Transformative Services</h2>
+          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+            Explore Our Transformative Services
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* First three cards */}
             {services.slice(0, 3).map((service, index) => (
@@ -87,7 +89,12 @@ export const ServicesSection = () => {
               </div>
             </div>
           </div>
-          <Button size="lg" className="mt-8 bg-emerald-600 hover:bg-emerald-700 text-white">Learn More About Our Services</Button>
+          <Button 
+            size="lg" 
+            className="mt-8 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto"
+          >
+            Learn More About Our Services
+          </Button>
         </motion.div>
       </div>
     </section>
