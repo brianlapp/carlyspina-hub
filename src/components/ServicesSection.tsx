@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { ServiceGrid } from "./services/ServiceGrid";
 
 const services = [
   {
@@ -11,7 +11,7 @@ const services = [
   {
     title: "Reiki",
     description: "Harness universal energy to restore harmony and vitality.",
-    image: "/lovable-uploads/Reiki.png"
+    image: "/lovable-uploads/635cc028-c9e6-4af4-8a14-12e5d6eb5698.png"
   },
   {
     title: "Reiki Training",
@@ -47,59 +47,9 @@ export const ServicesSection = () => {
           <p className="text-lg text-sage-600 max-w-3xl mx-auto mb-16">
             Discover a range of holistic healing modalities designed to support your wellness journey and spiritual growth.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.slice(0, 3).map((service, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="aspect-video relative overflow-hidden">
-                    <img 
-                      src={service.image} 
-                      alt={service.title}
-                      className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <CardContent className="p-6 text-center bg-white">
-                    <h3 className="text-xl font-semibold text-sage-900 mb-2">{service.title}</h3>
-                    <p className="text-sage-600">{service.description}</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-            
-            <div className="col-span-1 md:col-span-2 lg:col-span-3">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-none md:max-w-[calc(66.666%-2rem)] lg:max-w-[calc(66.666%-1rem)] mx-auto">
-                {services.slice(3).map((service, index) => (
-                  <motion.div
-                    key={index + 3}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: (index + 3) * 0.1 }}
-                    viewport={{ once: true }}
-                  >
-                    <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
-                      <div className="aspect-video relative overflow-hidden">
-                        <img 
-                          src={service.image} 
-                          alt={service.title}
-                          className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <CardContent className="p-6 text-center bg-white">
-                        <h3 className="text-xl font-semibold text-sage-900 mb-2">{service.title}</h3>
-                        <p className="text-sage-600">{service.description}</p>
-                      </CardContent>
-                    </Card>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
+          
+          <ServiceGrid services={services} />
+          
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
