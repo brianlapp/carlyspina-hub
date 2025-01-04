@@ -3,17 +3,16 @@ import { ShootingStars } from "./ui/shooting-stars";
 
 export const SpinalEnergeticsHero = () => {
   return (
-    <section className="relative pt-32 pb-20 px-4 min-h-[80vh] flex items-center overflow-hidden">
+    <section className="relative pt-32 pb-20 px-4 min-h-[60vh] flex items-center overflow-hidden">
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("/lovable-uploads/f3163abc-dfbd-4afd-82ab-82b84afe2d3c.png")',
+          backgroundImage: 'url("/lovable-uploads/356eac2f-de6d-49f5-b6ac-62eed6e4f840.png")',
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          backgroundPosition: 'center'
         }}
       >
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       </div>
 
       <ShootingStars
@@ -40,15 +39,12 @@ export const SpinalEnergeticsHero = () => {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.6 }}
         className="container mx-auto text-center relative z-10"
       >
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
           Spinal Energetics: Unlocking Your Body's Innate Wisdom
         </h1>
-        <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
-          Experience profound healing through the harmonious alignment of your spine and energy systems
-        </p>
       </motion.div>
     </section>
   );
