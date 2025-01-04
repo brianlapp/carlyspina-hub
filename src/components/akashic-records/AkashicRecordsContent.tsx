@@ -87,7 +87,7 @@ export const AkashicRecordsContent = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-sage-50 to-white pt-16 md:pt-24">
+    <div className="bg-gradient-to-b from-white to-sage-50 pt-16 md:pt-24">
       {sections.map((section, index) => (
         <ContentSection
           key={section.title}
