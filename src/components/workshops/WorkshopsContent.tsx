@@ -89,7 +89,7 @@ export const WorkshopsContent = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full overflow-hidden bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300">
+              <Card className="h-full overflow-hidden bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 border border-sage-200/50 shadow-sm">
                 <div className="aspect-video relative overflow-hidden">
                   <img 
                     src={workshop.image} 
