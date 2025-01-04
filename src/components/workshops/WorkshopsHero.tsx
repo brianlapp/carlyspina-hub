@@ -11,7 +11,7 @@ export const WorkshopsHero = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-[2.5px]" />
+        <div className="absolute inset-0 bg-black/50 backdrop-blur-[2.5px]" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10 text-center py-20">
