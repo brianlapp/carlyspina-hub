@@ -28,7 +28,7 @@ export const ServiceCard = ({ title, description, image, index, path, delay }: S
               alt={title}
               width={640}
               height={360}
-              loading="lazy"
+              loading={index > 2 ? "lazy" : "eager"}
               className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
             />
           </div>

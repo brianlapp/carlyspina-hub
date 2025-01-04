@@ -7,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
@@ -30,17 +30,22 @@ export const TestimonialsSection = () => {
   const [api, setApi] = useState<any>();
   const [current, setCurrent] = useState(0);
 
-  useEffect(() => {
-    if (!api) {
-      return;
-    }
-
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap());
-    });
+  const handleSelect = useCallback(() => {
+    if (!api) return;
+    setCurrent(api.selectedScrollSnap());
   }, [api]);
 
-  const scrollTo = (index: number) => api?.scrollTo(index);
+  useEffect(() => {
+    if (!api) return;
+    api.on("select", handleSelect);
+    return () => {
+      api.off("select", handleSelect);
+    };
+  }, [api, handleSelect]);
+
+  const scrollTo = useCallback((index: number) => {
+    api?.scrollTo(index);
+  }, [api]);
 
   return (
     <section className="py-16 md:py-20 bg-green-50">

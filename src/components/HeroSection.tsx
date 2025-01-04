@@ -16,6 +16,8 @@ export const HeroSection = () => {
           width: '100%',
           height: '100%'
         }}
+        role="img"
+        aria-label="Hero background"
       >
         <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       </div>
