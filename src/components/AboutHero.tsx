@@ -15,30 +15,46 @@ export const AboutHero = () => {
         <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       </div>
 
-      {/* Shooting Stars Effects */}
+      {/* Shooting Stars Effects - Adjusted for better visibility */}
       <ShootingStars
-        starColor="#9E00FF"
-        trailColor="#2EB9DF"
-        minSpeed={15}
-        maxSpeed={35}
-        minDelay={1000}
-        maxDelay={3000}
+        starColor="#8B5CF6"
+        trailColor="rgba(139, 92, 246, 0.3)"
+        minSpeed={8}
+        maxSpeed={15}
+        minDelay={800}
+        maxDelay={2000}
+        starWidth={15}
+        starHeight={2}
       />
       <ShootingStars
-        starColor="#FF0099"
-        trailColor="#FFB800"
+        starColor="#D946EF"
+        trailColor="rgba(217, 70, 239, 0.3)"
+        minSpeed={6}
+        maxSpeed={12}
+        minDelay={1200}
+        maxDelay={2500}
+        starWidth={12}
+        starHeight={2}
+      />
+      <ShootingStars
+        starColor="#F97316"
+        trailColor="rgba(249, 115, 22, 0.3)"
         minSpeed={10}
-        maxSpeed={25}
-        minDelay={2000}
-        maxDelay={4000}
+        maxSpeed={18}
+        minDelay={1000}
+        maxDelay={2200}
+        starWidth={18}
+        starHeight={2}
       />
       <ShootingStars
-        starColor="#00FF9E"
-        trailColor="#00B8FF"
-        minSpeed={20}
-        maxSpeed={40}
-        minDelay={1500}
-        maxDelay={3500}
+        starColor="#0EA5E9"
+        trailColor="rgba(14, 165, 233, 0.3)"
+        minSpeed={7}
+        maxSpeed={14}
+        minDelay={900}
+        maxDelay={2300}
+        starWidth={14}
+        starHeight={2}
       />
 
       <motion.div
