@@ -1,7 +1,7 @@
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -11,7 +11,9 @@ export const Navigation = () => {
   
   const services = [
     { name: "Spinal Energetics", path: "/spinal-energetics" },
-    // More services will be added here
+    { name: "Reiki", path: "/reiki" },
+    { name: "Reiki Training", path: "/reiki-training" },
+    { name: "Akashic Records Reading", path: "/akashic-records" }
   ];
 
   const navItems = [
@@ -102,7 +104,7 @@ export const Navigation = () => {
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="w-[200px] p-2">
+                    <div className="w-[250px] p-2">
                       {services.map((service) => (
                         <Link
                           key={service.name}
