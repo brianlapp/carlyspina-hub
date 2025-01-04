@@ -11,7 +11,10 @@ export const IntroSection = () => {
   const scrollToAbout = () => {
     const aboutSection = document.querySelector('#about-section');
     if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+      aboutSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
   };
 
