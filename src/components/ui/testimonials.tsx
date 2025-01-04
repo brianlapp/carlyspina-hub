@@ -70,7 +70,11 @@ function Testimonials() {
               {testimonials.map((testimonial, index) => (
                 <CarouselItem className="lg:basis-1/2" key={index}>
                   <div className="bg-white/80 backdrop-blur-sm rounded-xl h-full lg:col-span-2 p-8 border border-sage-200 hover:shadow-lg transition-all duration-300">
-                    <User className="w-8 h-8 stroke-1 text-emerald-600 mb-4" />
+                    <img 
+                      src="/lovable-uploads/906d4f53-16be-4e1b-bf5c-13940464b3a7.png" 
+                      alt="Lotus" 
+                      className="w-8 h-8 text-emerald-600 mb-4"
+                    />
                     <div className="flex flex-col gap-4">
                       <div className="flex flex-col">
                         <h3 className="text-xl font-semibold text-sage-900 mb-2">
