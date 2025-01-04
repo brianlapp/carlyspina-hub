@@ -1,14 +1,10 @@
 import { motion } from "framer-motion";
 import { ShootingStars } from "./ui/shooting-stars";
-import { useNavigate } from "react-router-dom";
-import { CallToAction } from "./CallToAction";
 
 export const IntroSection = () => {
-  const navigate = useNavigate();
-  const bookingUrl = "https://windsorhealingandwellness.square.site/s/appointments";
-
   return (
     <section className="relative py-24 bg-gradient-to-b from-sage-50/50 to-white overflow-hidden">
+      {/* Add ShootingStars components */}
       <ShootingStars
         starColor="#84cc16"
         trailColor="rgba(132, 204, 22, 0.3)"
@@ -46,22 +42,20 @@ export const IntroSection = () => {
             Reiki, and Akashic Records Reading, I offer personalized sessions designed to nurture your body, mind, and soul.
           </p>
           <div className="mt-8 flex justify-center space-x-4">
-            <motion.a
-              href={bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
               className="px-6 py-3 bg-emerald-600 text-white rounded-lg shadow-lg hover:bg-emerald-700 transition-colors cursor-pointer"
             >
               Book a Session
-            </motion.a>
-            <CallToAction 
-              primaryText="Join Our Mailing List"
-              secondaryText=""
-              onSecondaryClick={() => {}}
-              showFormByDefault={true}
-            />
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="px-6 py-3 border-2 border-emerald-600 text-emerald-600 rounded-lg hover:bg-emerald-50 transition-colors cursor-pointer"
+            >
+              Learn More
+            </motion.div>
           </div>
         </motion.div>
       </div>
