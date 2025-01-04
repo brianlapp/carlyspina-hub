@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import SpinalEnergetics from "./pages/SpinalEnergetics";
 import Reiki from "./pages/Reiki";
+import ReikiTraining from "./pages/ReikiTraining";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/spinal-energetics" element={<SpinalEnergetics />} />
           <Route path="/reiki" element={<Reiki />} />
+          <Route path="/reiki-training" element={<ReikiTraining />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
