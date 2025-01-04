@@ -1,36 +1,44 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ServiceGrid } from "./services/ServiceGrid";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
     title: "Spinal Energetics",
     description: "Align your physical and energetic self for lasting balance.",
-    image: "/lovable-uploads/fdfad428-46c4-4752-80c6-fc7e1a8dbdfe.png"
+    image: "/lovable-uploads/fdfad428-46c4-4752-80c6-fc7e1a8dbdfe.png",
+    path: "/spinal-energetics"
   },
   {
     title: "Reiki",
     description: "Harness universal energy to restore harmony and vitality.",
-    image: "/lovable-uploads/635cc028-c9e6-4af4-8a14-12e5d6eb5698.png"
+    image: "/lovable-uploads/635cc028-c9e6-4af4-8a14-12e5d6eb5698.png",
+    path: "/reiki"
   },
   {
     title: "Reiki Training",
     description: "Embark on a journey to become a certified Reiki practitioner.",
-    image: "/lovable-uploads/27c85602-474e-4829-9e00-d918ab0bde21.png"
+    image: "/lovable-uploads/27c85602-474e-4829-9e00-d918ab0bde21.png",
+    path: "/reiki-training"
   },
   {
     title: "Akashic Records Reading",
     description: "Gain clarity and insight into your soul's journey.",
-    image: "/lovable-uploads/ef096633-d4e7-4c80-853d-96faddfa0b80.png"
+    image: "/lovable-uploads/ef096633-d4e7-4c80-853d-96faddfa0b80.png",
+    path: "/akashic-records"
   },
   {
     title: "Workshops",
     description: "Join us for group sessions on spinal energetics, restorative yoga, Reiki, and sound bath.",
-    image: "/lovable-uploads/workshops.png"
+    image: "/lovable-uploads/workshops.png",
+    path: "/workshops"
   },
 ];
 
 export const ServicesSection = () => {
+  const bookingUrl = "https://windsorhealingandwellness.square.site/s/appointments";
+
   return (
     <section className="py-24 bg-gradient-to-b from-white via-sage-50/30 to-sage-100/20">
       <div className="container mx-auto px-4">
@@ -59,8 +67,9 @@ export const ServicesSection = () => {
             <Button 
               size="lg" 
               className="mt-16 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto shadow-lg hover:shadow-xl transition-all duration-300"
+              onClick={() => window.open(bookingUrl, '_blank')}
             >
-              Learn More About Our Services
+              Book Now
             </Button>
           </motion.div>
         </motion.div>

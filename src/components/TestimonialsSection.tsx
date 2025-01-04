@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { useNavigate } from "react-router-dom";
 
 const testimonials = [
   {
@@ -26,6 +27,7 @@ const testimonials = [
 ];
 
 export const TestimonialsSection = () => {
+  const navigate = useNavigate();
   const [api, setApi] = useState<any>();
   const [current, setCurrent] = useState(0);
 
@@ -100,6 +102,7 @@ export const TestimonialsSection = () => {
           <Button 
             size="lg" 
             className="mt-12 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto"
+            onClick={() => navigate('/testimonials')}
           >
             Read More Testimonials
           </Button>
