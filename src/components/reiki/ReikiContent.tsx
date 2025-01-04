@@ -22,8 +22,8 @@ export const ReikiContent = () => {
         "A Reiki session typically involves the practitioner placing their hands lightly on or just above specific areas of your body. Through this process, universal energy is channeled into your energetic field and physical body, encouraging deep relaxation and healing.",
         "Reiki is unique because it requires no physical manipulation or use of tools. Instead, it relies on the practitioner's attunement to the universal energy and their ability to direct it to areas of need. This allows Reiki to work on multiple levels—physical, emotional, mental, and spiritual—simultaneously."
       ],
-      image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843",
-      imageAlt: "Hands channeling energy",
+      image: "/lovable-uploads/23f33bc6-eedf-4f29-9975-99929d712fb9.png",
+      imageAlt: "Reiki healing session showing energy work with glowing ethereal effects",
       showButton: true
     },
     {
