@@ -67,13 +67,15 @@ export const AkashicRecordsContent = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-sage-900 mb-6">What Are the Akashic Records?</h2>
+              <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+                What Are the Akashic Records?
+              </h2>
               <p className="text-lg text-sage-600 mb-8">
                 The Akashic Records are a metaphysical database containing the energetic imprint of every thought, emotion, action, and experience that has ever occurred in the universe. Often described as a cosmic library or a spiritual archive, the Akashic Records hold the blueprint of your soul—including past lives, present experiences, and future possibilities.
               </p>
               <Button 
                 size="lg"
-                className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white"
+                className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-12 py-6 text-lg h-auto"
                 onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
               >
                 Book Your Reading Now
@@ -98,7 +100,9 @@ export const AkashicRecordsContent = () => {
           viewport={{ once: true }}
           className="mb-16 bg-gradient-to-br from-sage-50/50 to-emerald-50/50 p-8 rounded-2xl shadow-sm"
         >
-          <h2 className="text-3xl font-bold text-sage-900 mb-8">Benefits of an Akashic Records Reading</h2>
+          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+            Benefits of an Akashic Records Reading
+          </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {benefits.map((benefit, index) => (
               <motion.div
@@ -131,7 +135,9 @@ export const AkashicRecordsContent = () => {
           viewport={{ once: true }}
           className="mb-16 bg-gradient-to-br from-sage-50/50 to-emerald-50/50 p-8 rounded-2xl shadow-sm"
         >
-          <h2 className="text-3xl font-bold text-sage-900 mb-8">Frequently Asked Questions</h2>
+          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+            Frequently Asked Questions
+          </h2>
           <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
             {faqs.map((faq, index) => (
               <motion.div
@@ -169,7 +175,7 @@ export const AkashicRecordsContent = () => {
         >
           <Button 
             size="lg"
-            className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white"
+            className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-12 py-6 text-lg h-auto"
             onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
           >
             Book Your Akashic Records Reading Now
