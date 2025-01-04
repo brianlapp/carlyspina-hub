@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export const AkashicRecordsContent = () => {
   const benefits = [
@@ -60,46 +66,25 @@ export const AkashicRecordsContent = () => {
           className="mb-16"
         >
           <h2 className="text-3xl font-bold text-sage-900 mb-6">What Are the Akashic Records?</h2>
-          <p className="text-lg text-sage-600 mb-8">
-            The Akashic Records are a metaphysical database containing the energetic imprint of every thought, emotion, action, and experience that has ever occurred in the universe. Often described as a cosmic library or a spiritual archive, the Akashic Records hold the blueprint of your soul—including past lives, present experiences, and future possibilities.
-          </p>
-          <p className="text-lg text-sage-600 mb-8">
-            Accessing the Akashic Records can provide profound insights, guidance, and healing, enabling you to better understand your soul's journey and purpose.
-          </p>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
-          <h2 className="text-3xl font-bold text-sage-900 mb-6">How Does an Akashic Records Reading Work?</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-xl font-semibold text-sage-800 mb-4">Preparation</h3>
-              <p className="text-sage-600 mb-6">
-                Before the session, you'll reflect on areas of your life where you seek guidance or clarity. You may prepare specific questions to explore during the reading.
+              <p className="text-lg text-sage-600 mb-8">
+                The Akashic Records are a metaphysical database containing the energetic imprint of every thought, emotion, action, and experience that has ever occurred in the universe. Often described as a cosmic library or a spiritual archive, the Akashic Records hold the blueprint of your soul—including past lives, present experiences, and future possibilities.
               </p>
+              <Button 
+                size="lg"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white"
+                onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+              >
+                Book Your Reading Now
+              </Button>
             </div>
-            <div>
-              <h3 className="text-xl font-semibold text-sage-800 mb-4">Opening the Records</h3>
-              <p className="text-sage-600 mb-6">
-                During the session, Carly Spina will use a sacred prayer or invocation to access your Akashic Records. This creates a safe and sacred space for exploration and healing.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-sage-800 mb-4">Exploration and Insights</h3>
-              <p className="text-sage-600 mb-6">
-                Carly will connect with your soul's energy and relay the messages, images, and insights received from your records. These may include past life experiences, emotional patterns, and guidance on your path.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-sage-800 mb-4">Integration</h3>
-              <p className="text-sage-600 mb-6">
-                After the reading, you'll have time to reflect on the insights and discuss ways to integrate the guidance into your daily life.
-              </p>
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/Akashic-Records-Reading.png"
+                alt="Akashic Records Reading"
+                className="rounded-lg shadow-xl w-full object-cover aspect-[4/3]"
+              />
             </div>
           </div>
         </motion.section>
@@ -114,17 +99,25 @@ export const AkashicRecordsContent = () => {
           <h2 className="text-3xl font-bold text-sage-900 mb-8">Benefits of an Akashic Records Reading</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {benefits.map((benefit, index) => (
-              <Card key={index} className="p-6">
-                <h3 className="text-xl font-semibold text-sage-800 mb-4">{benefit.title}</h3>
-                <ul className="space-y-2">
-                  {benefit.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="text-sage-600 flex items-start">
-                      <span className="mr-2 mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-emerald-500" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </Card>
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Card className="p-6 h-full bg-white/50 backdrop-blur-sm border-sage-200">
+                  <h3 className="text-xl font-semibold text-sage-800 mb-4">{benefit.title}</h3>
+                  <ul className="space-y-2">
+                    {benefit.items.map((item, itemIndex) => (
+                      <li key={itemIndex} className="text-sage-600 flex items-start">
+                        <span className="mr-2 mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-emerald-500" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </motion.section>
@@ -136,15 +129,33 @@ export const AkashicRecordsContent = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-3xl font-bold text-sage-900 mb-6">Frequently Asked Questions</h2>
-          <div className="space-y-6">
+          <h2 className="text-3xl font-bold text-sage-900 mb-8">Frequently Asked Questions</h2>
+          <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
             {faqs.map((faq, index) => (
-              <div key={index} className="border-b border-sage-200 pb-6">
-                <h3 className="text-xl font-semibold text-sage-800 mb-2">{faq.question}</h3>
-                <p className="text-sage-600">{faq.answer}</p>
-              </div>
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <AccordionItem value={`item-${index}`} className="border-sage-200">
+                  <AccordionTrigger className="text-left text-lg font-medium text-sage-800 hover:text-sage-900 hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sage-600">
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      {faq.answer}
+                    </motion.div>
+                  </AccordionContent>
+                </AccordionItem>
+              </motion.div>
             ))}
-          </div>
+          </Accordion>
         </motion.section>
 
         <motion.div

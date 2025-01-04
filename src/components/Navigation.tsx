@@ -82,22 +82,19 @@ export const Navigation = () => {
             </Sheet>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4">
             <NavigationMenu>
               <NavigationMenuList className="gap-4">
-                {navItems.map((item) => (
-                  <NavigationMenuItem key={item.name}>
-                    <Link 
-                      to={item.path}
-                      className={`px-4 py-2 text-sage-600 hover:text-sage-900 transition-colors ${
-                        location.pathname === item.path ? "text-sage-900 font-medium" : ""
-                      }`}
-                    >
-                      {item.name}
-                    </Link>
-                  </NavigationMenuItem>
-                ))}
+                <NavigationMenuItem>
+                  <Link 
+                    to="/"
+                    className={`px-4 py-2 text-sage-600 hover:text-sage-900 transition-colors ${
+                      location.pathname === "/" ? "text-sage-900 font-medium" : ""
+                    }`}
+                  >
+                    Home
+                  </Link>
+                </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-sage-600 hover:text-sage-900 transition-colors">
                     Services
@@ -118,6 +115,18 @@ export const Navigation = () => {
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
+                {navItems.slice(1).map((item) => (
+                  <NavigationMenuItem key={item.name}>
+                    <Link 
+                      to={item.path}
+                      className={`px-4 py-2 text-sage-600 hover:text-sage-900 transition-colors ${
+                        location.pathname === item.path ? "text-sage-900 font-medium" : ""
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  </NavigationMenuItem>
+                ))}
               </NavigationMenuList>
             </NavigationMenu>
             <Button 
