@@ -13,7 +13,7 @@ export const HeroSection = () => {
           backgroundAttachment: 'fixed'
         }}
       >
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
       </div>
 
       <ShootingStars
