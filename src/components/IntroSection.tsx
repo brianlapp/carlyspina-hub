@@ -1,8 +1,20 @@
 import { motion } from "framer-motion";
 import { ShootingStars } from "./ui/shooting-stars";
 import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
 
 export const IntroSection = () => {
+  const handleBookNow = () => {
+    window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank');
+  };
+
+  const scrollToServices = () => {
+    const servicesSection = document.querySelector('#services-section');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative py-24 bg-gradient-to-b from-sage-50/50 to-white overflow-hidden">
       <ShootingStars
@@ -38,29 +50,24 @@ export const IntroSection = () => {
             Welcome to CarlySpina.com
           </h2>
           <p className="text-lg md:text-xl text-sage-600 leading-relaxed">
-            Welcome to a space of healing and transformation. As a dedicated practitioner specializing in Spinal Energetics, 
-            Reiki, and Akashic Records Reading, I offer personalized sessions designed to nurture your body, mind, and soul.
+            Welcome to CarlySpina.com, where healing meets transformation. Carly Spina is a dedicated practitioner specializing in Spinal Energetics, Reiki, Akashic Records Reading, and a variety of holistic modalities. With a passion for empowering others to embrace their highest potential, Carly offers personalized sessions and group experiences designed to nurture the body, mind, and soul.
           </p>
-          <div className="mt-8 flex justify-center space-x-4">
-            <motion.a
-              href="https://windsorhealingandwellness.square.site/s/appointments"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
-              className="px-6 py-3 bg-emerald-600 text-white rounded-lg shadow-lg hover:bg-emerald-700 transition-colors cursor-pointer"
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+            <Button 
+              onClick={handleBookNow}
+              className="bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
+              size="lg"
             >
-              Book a Session
-            </motion.a>
-            <Link to="/about">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
-                className="px-6 py-3 border-2 border-emerald-600 text-emerald-600 rounded-lg hover:bg-emerald-50 transition-colors cursor-pointer"
-              >
-                Learn More
-              </motion.div>
-            </Link>
+              Book Now
+            </Button>
+            <Button 
+              onClick={scrollToServices}
+              variant="outline"
+              className="border-emerald-600 text-emerald-600 hover:bg-emerald-50"
+              size="lg"
+            >
+              Explore Services
+            </Button>
           </div>
         </motion.div>
       </div>
