@@ -42,7 +42,7 @@ export const ReikiTrainingContent = () => {
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="/lovable-uploads/976c41e5-3cc7-4936-bd63-a5b80c40b16c.png"
+                src="/lovable-uploads/7c4ed573-b878-4d55-b030-f5e53a7ad0e0.png"
                 alt="Carly Spina teaching Reiki"
                 className="w-full h-full object-cover"
               />
@@ -73,7 +73,7 @@ export const ReikiTrainingContent = () => {
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="/lovable-uploads/7c4ed573-b878-4d55-b030-f5e53a7ad0e0.png"
+                src="/lovable-uploads/936ac5d7-e4ff-44ed-b35c-91f6fde4f4e6.png"
                 alt="Carly Spina, Reiki Master Teacher"
                 className="w-full h-full object-cover"
               />
