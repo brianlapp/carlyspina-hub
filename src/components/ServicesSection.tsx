@@ -6,7 +6,7 @@ const services = [
   {
     title: "Spinal Energetics",
     description: "Align your physical and energetic self for lasting balance.",
-    image: "/lovable-uploads/Spinal-Energetics.png"
+    image: "/lovable-uploads/fdfad428-46c4-4752-80c6-fc7e1a8dbdfe.png"
   },
   {
     title: "Reiki",
