@@ -7,7 +7,7 @@ export const TestimonialsHero = () => {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("/lovable-uploads/536764db-e4d2-45b3-b8a2-a7297306c263.png")',
+          backgroundImage: 'url("/lovable-uploads/aefd8ad8-6257-450e-a203-0d4dcb872ea5.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
