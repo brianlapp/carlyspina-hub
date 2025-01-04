@@ -35,12 +35,17 @@ export const TestimonialsSection = () => {
       return;
     }
 
-    api.on("select", () => {
+    const onSelect = () => {
       setCurrent(api.selectedScrollSnap());
-    });
+    };
+
+    api.on("select", onSelect);
+    return () => api.off("select", onSelect);
   }, [api]);
 
-  const scrollTo = (index: number) => api?.scrollTo(index);
+  const handleBookNow = () => {
+    window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank');
+  };
 
   return (
     <section className="py-16 md:py-20 bg-green-50">
@@ -86,13 +91,12 @@ export const TestimonialsSection = () => {
               {testimonials.map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => scrollTo(index)}
-                  className={cn(
-                    "h-2.5 w-2.5 rounded-full transition-all duration-300",
+                  onClick={() => api?.scrollTo(index)}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${
                     current === index 
                       ? "bg-emerald-600 w-4" 
-                      : "bg-emerald-200 hover:bg-emerald-300"
-                  )}
+                      : "bg-emerald-200 hover:bg-emerald-300 w-2.5"
+                  }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}
