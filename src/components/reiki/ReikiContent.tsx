@@ -78,8 +78,8 @@ export const ReikiContent = () => {
       }
     ],
     showButton: true,
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
-    imageAlt: "Serene nature scene representing healing energy"
+    image: "/lovable-uploads/ce9835ea-f2e6-40d1-afef-cb8a382c6539.png",
+    imageAlt: "Ethereal meditation scene with flowing energy streams and spiritual illumination"
   };
 
   return (
