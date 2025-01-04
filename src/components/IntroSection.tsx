@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 export const IntroSection = () => {
   return (
     <section className="relative py-24 bg-gradient-to-b from-sage-50/50 to-white overflow-hidden">
-      {/* Add ShootingStars components */}
       <ShootingStars
         starColor="#84cc16"
         trailColor="rgba(132, 204, 22, 0.3)"
