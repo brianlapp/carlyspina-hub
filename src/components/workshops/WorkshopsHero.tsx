@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ShootingStars } from "../ui/shooting-stars";
 
 export const WorkshopsHero = () => {
   return (
@@ -13,6 +14,27 @@ export const WorkshopsHero = () => {
       >
         <div className="absolute inset-0 bg-black/50 backdrop-blur-[2.5px]" />
       </div>
+
+      <ShootingStars
+        starColor="#84cc16"
+        trailColor="rgba(132, 204, 22, 0.3)"
+        minSpeed={4}
+        maxSpeed={8}
+        minDelay={800}
+        maxDelay={2000}
+        starWidth={15}
+        starHeight={2}
+      />
+      <ShootingStars
+        starColor="#bef264"
+        trailColor="rgba(190, 242, 100, 0.3)"
+        minSpeed={5}
+        maxSpeed={9}
+        minDelay={1000}
+        maxDelay={2200}
+        starWidth={18}
+        starHeight={2}
+      />
       
       <div className="container mx-auto px-4 relative z-10 text-center py-20">
         <motion.h1
