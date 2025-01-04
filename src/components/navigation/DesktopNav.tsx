@@ -16,6 +16,9 @@ interface DesktopNavProps {
 export const DesktopNav = ({ services, navItems }: DesktopNavProps) => {
   const location = useLocation();
   
+  // Check if current path is a service page
+  const isServicePage = services.some(service => location.pathname === service.path);
+  
   return (
     <div className="hidden md:flex items-center gap-4">
       <NavigationMenu>
@@ -32,7 +35,9 @@ export const DesktopNav = ({ services, navItems }: DesktopNavProps) => {
           </NavigationMenuItem>
           <NavigationMenuItem className="relative">
             <NavigationMenuTrigger 
-              className="text-sage-600 hover:text-sage-900 transition-colors data-[state=open]:text-sage-900"
+              className={`text-sage-600 hover:text-sage-900 transition-colors ${
+                isServicePage ? "text-sage-900 font-medium" : ""
+              }`}
             >
               Services
             </NavigationMenuTrigger>
