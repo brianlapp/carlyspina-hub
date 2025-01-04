@@ -8,15 +8,17 @@ interface CallToActionProps {
   primaryLink?: string;
   secondaryText?: string;
   onSecondaryClick?: () => void;
+  showFormByDefault?: boolean;
 }
 
 export const CallToAction = ({
   primaryText = "Book With Carly Spina",
   primaryLink = "https://windsorhealingandwellness.square.site/s/appointments",
   secondaryText = "Join Our Mailing List",
-  onSecondaryClick
+  onSecondaryClick,
+  showFormByDefault = false
 }: CallToActionProps) => {
-  const [showForm, setShowForm] = useState(false);
+  const [showForm, setShowForm] = useState(showFormByDefault);
 
   useEffect(() => {
     // Load Campaign Monitor script
