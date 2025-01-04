@@ -13,7 +13,8 @@ export const Navigation = () => {
     { name: "Spinal Energetics", path: "/spinal-energetics" },
     { name: "Reiki", path: "/reiki" },
     { name: "Reiki Training", path: "/reiki-training" },
-    { name: "Akashic Records Reading", path: "/akashic-records" }
+    { name: "Akashic Records Reading", path: "/akashic-records" },
+    { name: "Workshops", path: "/workshops" }
   ];
 
   const navItems = [
