@@ -12,8 +12,8 @@ const workshops = [
       "Deepen the connection between mind and body",
       "Foster a sense of community and shared healing"
     ],
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-    imageAlt: "Group meditation session in a peaceful environment"
+    image: "https://images.unsplash.com/photo-1573126617899-41f1dffb196c?q=80&w=2070&auto=format&fit=crop",
+    imageAlt: "Group meditation circle in a peaceful studio setting with soft natural lighting, showing participants connected in healing energy"
   },
   {
     title: "Restorative Yoga",
