@@ -24,8 +24,8 @@ const workshops = [
       "Balance the body's energy systems",
       "Cultivate mindfulness and inner calm"
     ],
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-    imageAlt: "Peaceful yoga studio with natural light"
+    image: "/lovable-uploads/52eb17e6-e9b6-45b2-93b3-6f8522e67885.png",
+    imageAlt: "Serene yoga studio with arched windows and natural light, showing a group meditation circle on yoga mats with sunbeams streaming through the windows"
   },
   {
     title: "Reiki in a Group Setting",
