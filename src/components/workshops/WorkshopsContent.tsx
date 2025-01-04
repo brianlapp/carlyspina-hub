@@ -65,7 +65,7 @@ export const WorkshopsContent = () => {
           </p>
           <Button 
             size="lg"
-            className="mt-8 bg-emerald-600 hover:bg-emerald-700 text-white"
+            className="mt-8 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto w-full max-w-xl mx-auto"
             onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
           >
             Explore Upcoming Workshops and Reserve Your Spot Today
@@ -105,7 +105,7 @@ export const WorkshopsContent = () => {
                     </ul>
                   </div>
                   <Button 
-                    className="mt-6 w-full bg-emerald-600 hover:bg-emerald-700 text-white"
+                    className="mt-6 w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 h-auto text-lg"
                     onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
                   >
                     Explore Upcoming {workshop.title} Workshops
@@ -179,7 +179,7 @@ export const WorkshopsContent = () => {
             </p>
             <Button 
               size="lg"
-              className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-6 text-lg h-auto"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto w-full max-w-xl mx-auto"
               onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
             >
               Explore Upcoming Workshops and Reserve Your Spot Today
