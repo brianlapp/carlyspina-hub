@@ -22,8 +22,8 @@ export const SpinalEnergeticsContent = () => {
         "During a Spinal Energetics session, Carly works with your spine, nervous system, and energetic field through light yet powerful touch—and often no touch at all. This method engages your body's innate wisdom, encouraging it to intuitively unwind, shift, and release deeply held tension and stored stories within the body.",
         "An organic flow of movement and sound often emerges as part of the process. These movements and sounds are natural, primordial expressions driven by your energy, intuition, and instincts. They reflect the body's innate response to the treatment, unlocking layers of physical and emotional blockages for profound healing."
       ],
-      image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843",
-      imageAlt: "Sunlight through trees representing energy flow",
+      image: "/lovable-uploads/6d7c021d-2274-4314-88ec-9e6739342679.png",
+      imageAlt: "Artistic visualization of energy work showing a glowing spine and ethereal energy patterns",
       showButton: true
     },
     {
