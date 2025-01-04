@@ -42,8 +42,8 @@ export const ReikiTrainingContent = () => {
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="/lovable-uploads/7c4ed573-b878-4d55-b030-f5e53a7ad0e0.png"
-                alt="Carly Spina teaching Reiki"
+                src="/lovable-uploads/723879b6-af4b-4074-83f2-80c37e69165b.png"
+                alt="Spiritual energy visualization representing Reiki training journey"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
