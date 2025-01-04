@@ -36,8 +36,8 @@ const workshops = [
       "Enhance mental clarity and focus",
       "Strengthen spiritual connection and intuition"
     ],
-    image: "/lovable-uploads/536764db-e4d2-45b3-b8a2-a7297306c263.png",
-    imageAlt: "Atmospheric healing space with warm lighting where a Reiki practitioner stands centered among seated participants in a circle, with singing bowls and peaceful decorative elements creating a serene environment"
+    image: "/lovable-uploads/d98d9d1f-b5fa-4d66-b490-e8bb38f83766.png",
+    imageAlt: "Atmospheric healing space with warm golden lighting where participants sit in meditation on cushions arranged in a circle, with singing bowls placed before them, while a practitioner stands centrally channeling healing energy, surrounded by candles and natural decor"
   },
   {
     title: "Sound Bath",
