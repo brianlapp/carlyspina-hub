@@ -75,8 +75,8 @@ export const SpinalEnergeticsContent = () => {
       }
     ],
     showButton: true,
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
-    imageAlt: "Aerial view of peaceful landscape"
+    image: "/lovable-uploads/1218757e-6d05-49e0-84f7-3e6a86db3b2e.png",
+    imageAlt: "Artistic visualization of spinal energetics showing a meditating figure with glowing spine, DNA helix, and energy patterns"
   };
 
   return (
