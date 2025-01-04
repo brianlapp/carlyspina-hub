@@ -12,8 +12,8 @@ export const ReikiContent = () => {
         "Reiki is a powerful, non-invasive energy healing practice that promotes balance, relaxation, and overall well-being. Originating from Japan, the word \"Reiki\" translates to \"Universal Life Energy.\" It involves channeling this energy to clear blockages, restore harmony, and support the body's natural healing processes.",
         "This ancient practice is based on the belief that energy flows through all living beings. When this energy is disrupted or blocked, it can lead to physical, emotional, or spiritual imbalances. Reiki works to realign and restore this flow, creating a state of balance and vitality."
       ],
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-      imageAlt: "Serene landscape representing balance and harmony",
+      image: "/lovable-uploads/b0b88245-e029-48f7-bb11-f62ce439eaa1.png",
+      imageAlt: "Hands channeling healing energy with ethereal light and a peaceful candle setting",
       showButton: true
     },
     {
