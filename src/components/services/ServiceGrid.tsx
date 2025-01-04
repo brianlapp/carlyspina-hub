@@ -1,5 +1,4 @@
 import { ServiceCard } from "./ServiceCard";
-import { useIsMobile } from "@/hooks/use-mobile";
 
 interface Service {
   title: string;
@@ -13,17 +12,29 @@ interface ServiceGridProps {
 }
 
 export const ServiceGrid = ({ services }: ServiceGridProps) => {
-  const isMobile = useIsMobile();
+  const topServices = services.slice(0, 3);
+  const bottomServices = services.slice(3);
 
   return (
-    <div className="space-y-6 md:space-y-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-        {services.map((service, index) => (
+    <div className="space-y-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {topServices.map((service, index) => (
           <ServiceCard 
             key={index}
             index={index}
             {...service}
-            delay={isMobile ? 0 : index * 0.1}
+            delay={index * 0.1}
+          />
+        ))}
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-none md:max-w-[calc(66.666%-2rem)] lg:max-w-[calc(66.666%-1rem)] mx-auto">
+        {bottomServices.map((service, index) => (
+          <ServiceCard 
+            key={index + 3}
+            index={index + 3}
+            {...service}
+            delay={(index + 3) * 0.1}
           />
         ))}
       </div>
