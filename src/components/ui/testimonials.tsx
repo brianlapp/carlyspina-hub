@@ -58,7 +58,7 @@ function Testimonials() {
             Client Experiences
           </h2>
           <p className="text-center text-sage-600 text-lg max-w-2xl mx-auto">
-            Discover the transformative journeys of those who have experienced our healing services
+            Read how our healing services have transformed lives and brought peace, balance, and renewal to our cherished clients
           </p>
           <Carousel setApi={setApi} className="w-full">
             <CarouselContent>
