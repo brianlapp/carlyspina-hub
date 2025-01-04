@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && npm run build"
+  command = "npm install && npm i @esbuild/linux-x64 && npm run build"
   publish = "dist"
 
 [build.environment]
