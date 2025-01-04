@@ -1,34 +1,19 @@
 import { motion } from "framer-motion";
 import { ShootingStars } from "./ui/shooting-stars";
-import { useEffect, useState } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export const HeroSection = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    
-    // Check initially
-    checkMobile();
-    
-    // Add event listener
-    window.addEventListener('resize', checkMobile);
-    
-    // Cleanup
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
+  const isMobile = useIsMobile();
 
   return (
     <section className="relative pt-32 pb-20 px-4 min-h-[90vh] flex items-center">
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url("${isMobile ? '/lovable-uploads/ed499d1c-b9e8-41c7-90c8-c2b63d7a7c1d.png' : '/lovable-uploads/6e73e5d4-c94c-4c3f-8ff1-b421f6d24323.png'}")`,
+          backgroundImage: `url(${isMobile ? '/lovable-uploads/ed499d1c-b9e8-41c7-90c8-c2b63d7a7c1d.png' : '/lovable-uploads/6e73e5d4-c94c-4c3f-8ff1-b421f6d24323.png'})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
+          backgroundAttachment: isMobile ? 'scroll' : 'fixed'
         }}
       >
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
