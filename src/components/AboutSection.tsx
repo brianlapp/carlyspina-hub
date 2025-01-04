@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const AboutSection = () => {
+  const scrollToServices = () => {
+    const servicesSection = document.querySelector('#services-section');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -25,7 +33,21 @@ export const AboutSection = () => {
               <p className="text-sage-600 mb-8">
                 With years of experience and a deep commitment to her practice, Carly combines ancient wisdom with modern techniques to create a safe, nurturing space for healing and growth. Whether you're new to energy work or a seasoned seeker, Carly is here to support your journey.
               </p>
-              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white">Meet Carly</Button>
+              <div className="flex gap-4">
+                <Link to="/about">
+                  <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white">
+                    Meet Carly
+                  </Button>
+                </Link>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-emerald-600 text-emerald-600 hover:bg-emerald-50"
+                  onClick={scrollToServices}
+                >
+                  Explore Services
+                </Button>
+              </div>
             </div>
           </div>
         </motion.div>
