@@ -56,7 +56,7 @@ export const AkashicRecordsContent = () => {
   ];
 
   return (
-    <div className="py-16 md:py-24">
+    <div className="py-16 md:py-24 bg-sage-50">
       <div className="container mx-auto px-4">
         <motion.section
           initial={{ opacity: 0, y: 20 }}

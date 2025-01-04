@@ -95,12 +95,14 @@ export const Navigation = () => {
                     Home
                   </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-sage-600 hover:text-sage-900 transition-colors">
+                <NavigationMenuItem className="relative">
+                  <NavigationMenuTrigger 
+                    className="text-sage-600 hover:text-sage-900 transition-colors data-[state=open]:text-sage-900"
+                  >
                     Services
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <div className="w-[250px] p-2">
+                  <NavigationMenuContent className="absolute left-0">
+                    <div className="w-[250px] p-2 bg-white shadow-lg rounded-md">
                       {services.map((service) => (
                         <Link
                           key={service.name}
