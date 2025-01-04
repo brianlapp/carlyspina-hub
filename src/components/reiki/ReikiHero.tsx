@@ -6,7 +6,7 @@ export const ReikiHero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")',
+          backgroundImage: 'url("/lovable-uploads/Reiki.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -22,6 +22,9 @@ export const ReikiHero = () => {
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
           Reiki: Restore Balance and Harness Universal Energy
         </h1>
+        <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          Experience deep relaxation and healing through the gentle power of Reiki energy work.
+        </p>
       </motion.div>
     </section>
   );
