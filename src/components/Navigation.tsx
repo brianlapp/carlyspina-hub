@@ -29,7 +29,6 @@ export const Navigation = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-auto flex justify-between items-center relative">
-            {/* Hamburger Menu - Absolute positioned */}
             <Sheet>
               <SheetTrigger asChild className="md:hidden absolute left-0">
                 <Button variant="ghost" size="icon">
@@ -81,11 +80,10 @@ export const Navigation = () => {
               </SheetContent>
             </Sheet>
             
-            {/* Logo - Centered container */}
             <div className="w-full md:w-auto flex justify-center md:justify-start">
               <Link to="/" className="flex items-center gap-2 text-2xl font-semibold text-sage-900">
                 <img 
-                  src="/lovable-uploads/a3eb6f31-b574-46c0-b96a-3449a3bea46e.png" 
+                  src="/lovable-uploads/51d316bb-a400-4319-953f-ceb5c5a653da.png" 
                   alt="Lotus" 
                   className="h-8 w-auto"
                 />
