@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ShootingStars } from "./ui/shooting-stars";
+import { Link } from "react-router-dom";
 
 export const IntroSection = () => {
   return (
@@ -42,20 +43,25 @@ export const IntroSection = () => {
             Reiki, and Akashic Records Reading, I offer personalized sessions designed to nurture your body, mind, and soul.
           </p>
           <div className="mt-8 flex justify-center space-x-4">
-            <motion.div
+            <motion.a
+              href="https://windsorhealingandwellness.square.site/s/appointments"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
               className="px-6 py-3 bg-emerald-600 text-white rounded-lg shadow-lg hover:bg-emerald-700 transition-colors cursor-pointer"
             >
               Book a Session
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
-              className="px-6 py-3 border-2 border-emerald-600 text-emerald-600 rounded-lg hover:bg-emerald-50 transition-colors cursor-pointer"
-            >
-              Learn More
-            </motion.div>
+            </motion.a>
+            <Link to="/about">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="px-6 py-3 border-2 border-emerald-600 text-emerald-600 rounded-lg hover:bg-emerald-50 transition-colors cursor-pointer"
+              >
+                Learn More
+              </motion.div>
+            </Link>
           </div>
         </motion.div>
       </div>
