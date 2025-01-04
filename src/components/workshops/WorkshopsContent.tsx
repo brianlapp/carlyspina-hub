@@ -48,8 +48,8 @@ const workshops = [
       "Balance the chakras and energy fields",
       "Induce a meditative state and enhance mindfulness"
     ],
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
-    imageAlt: "Peaceful setting with sound healing instruments"
+    image: "/lovable-uploads/976c41e5-3cc7-4936-bd63-a5b80c40b16c.png",
+    imageAlt: "Atmospheric sound healing space with wooden floors and warm lighting, featuring multiple singing bowls arranged in rows alongside meditation mats, blankets, and large gongs, creating an inviting environment for deep relaxation"
   }
 ];
 
