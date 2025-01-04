@@ -22,14 +22,14 @@ export const ServiceCard = ({ title, description, image, index, path, delay }: S
         className="h-full"
       >
         <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
-          <div className="relative w-full pt-[56.25%]">
+          <div className="relative w-full aspect-[16/9]">
             <img 
               src={image} 
               alt={title}
               width={640}
               height={360}
               loading="lazy"
-              className="absolute inset-0 object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
+              className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
             />
           </div>
           <CardContent className="p-4 md:p-6 text-center bg-white flex-grow flex flex-col justify-between">

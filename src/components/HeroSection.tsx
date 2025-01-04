@@ -10,7 +10,7 @@ export const HeroSection = () => {
       <div 
         className="absolute inset-0 z-0 bg-sage-900"
         style={{
-          backgroundImage: 'url("/lovable-uploads/356eac2f-de6d-49f5-b6ac-62eed6e4f840.png")',
+          backgroundImage: 'url("https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100%',
