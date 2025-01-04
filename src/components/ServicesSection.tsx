@@ -47,7 +47,7 @@ export const ServicesSection = () => {
             {services.slice(0, 3).map((service, index) => (
               <Card 
                 key={index} 
-                className="overflow-hidden border-none w-full max-w-md mx-auto"
+                className="overflow-hidden border-none w-full mx-auto"
               >
                 <div className="aspect-video relative overflow-hidden">
                   <img 
@@ -63,13 +63,13 @@ export const ServicesSection = () => {
               </Card>
             ))}
             
-            {/* Last two cards in a centered container */}
+            {/* Last two cards */}
             <div className="col-span-1 md:col-span-2 lg:col-span-3">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[calc(66.666%-2rem)] lg:max-w-[calc(66.666%-1rem)] mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-none md:max-w-[calc(66.666%-2rem)] lg:max-w-[calc(66.666%-1rem)] mx-auto">
                 {services.slice(3).map((service, index) => (
                   <Card 
                     key={index + 3} 
-                    className="overflow-hidden border-none w-full max-w-md mx-auto"
+                    className="overflow-hidden border-none w-full mx-auto"
                   >
                     <div className="aspect-video relative overflow-hidden">
                       <img 
