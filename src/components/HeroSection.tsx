@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ShootingStars } from "./ui/shooting-stars";
 
 export const HeroSection = () => {
   return (
@@ -11,8 +12,51 @@ export const HeroSection = () => {
           backgroundPosition: 'center'
         }}
       >
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       </div>
+
+      {/* Shooting Stars Effects */}
+      <ShootingStars
+        starColor="#84cc16"
+        trailColor="rgba(132, 204, 22, 0.3)"
+        minSpeed={4}
+        maxSpeed={8}
+        minDelay={800}
+        maxDelay={2000}
+        starWidth={15}
+        starHeight={2}
+      />
+      <ShootingStars
+        starColor="#D946EF"
+        trailColor="rgba(217, 70, 239, 0.3)"
+        minSpeed={3}
+        maxSpeed={7}
+        minDelay={1200}
+        maxDelay={2500}
+        starWidth={12}
+        starHeight={2}
+      />
+      <ShootingStars
+        starColor="#bef264"
+        trailColor="rgba(190, 242, 100, 0.3)"
+        minSpeed={5}
+        maxSpeed={9}
+        minDelay={1000}
+        maxDelay={2200}
+        starWidth={18}
+        starHeight={2}
+      />
+      <ShootingStars
+        starColor="#a3e635"
+        trailColor="rgba(163, 230, 53, 0.3)"
+        minSpeed={4}
+        maxSpeed={8}
+        minDelay={900}
+        maxDelay={2300}
+        starWidth={14}
+        starHeight={2}
+      />
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
