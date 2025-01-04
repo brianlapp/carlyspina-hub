@@ -20,7 +20,7 @@ export const Navigation = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Testimonials", path: "/#testimonials" },
+    { name: "Testimonials", path: "/testimonials" },
     { name: "Contact", path: "/#contact" }
   ];
 

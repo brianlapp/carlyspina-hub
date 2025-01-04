@@ -11,6 +11,7 @@ import Reiki from "./pages/Reiki";
 import ReikiTraining from "./pages/ReikiTraining";
 import AkashicRecords from "./pages/AkashicRecords";
 import Workshops from "./pages/Workshops";
+import Testimonials from "./pages/Testimonials";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/reiki-training" element={<ReikiTraining />} />
           <Route path="/akashic-records" element={<AkashicRecords />} />
           <Route path="/workshops" element={<Workshops />} />
+          <Route path="/testimonials" element={<Testimonials />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
