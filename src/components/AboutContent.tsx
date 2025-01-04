@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CallToAction } from "@/components/CallToAction";
+import { Card, CardContent } from "@/components/ui/card";
 
 export const AboutContent = () => {
   const introText = [
@@ -20,7 +21,7 @@ export const AboutContent = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-sage-50">
+    <section className="py-20 px-4 bg-gradient-to-b from-white to-sage-50/30">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -28,110 +29,117 @@ export const AboutContent = () => {
         className="container mx-auto max-w-4xl"
       >
         {/* First Text Block with Right Image */}
-        <div className="grid md:grid-cols-2 gap-12 mb-20">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
-            {introText.map((text, index) => (
-              <motion.p
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+        <Card className="mb-20 overflow-hidden border-sage-200/50 shadow-lg bg-white/80 backdrop-blur-sm">
+          <CardContent className="p-8">
+            <div className="grid md:grid-cols-2 gap-12">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="text-sage-600 leading-relaxed text-lg"
+                className="space-y-6"
               >
-                {text}
-              </motion.p>
-            ))}
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="relative group h-fit"
-          >
-            <div className="absolute inset-0 bg-emerald-200/20 rounded-2xl transform rotate-3 transition-transform group-hover:rotate-0" />
-            <img
-              src="/lovable-uploads/f96317dc-e3da-4419-9f9a-200143db7669.png"
-              alt="Carly Spina"
-              className="rounded-2xl relative z-10 w-full object-cover transform transition-transform group-hover:scale-[1.02]"
-            />
-          </motion.div>
-        </div>
+                {introText.map((text, index) => (
+                  <motion.p
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="text-sage-600 leading-relaxed text-lg"
+                  >
+                    {text}
+                  </motion.p>
+                ))}
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="relative group h-fit"
+              >
+                <div className="absolute inset-0 bg-emerald-200/20 rounded-2xl transform rotate-3 transition-transform group-hover:rotate-0" />
+                <img
+                  src="/lovable-uploads/f96317dc-e3da-4419-9f9a-200143db7669.png"
+                  alt="Carly Spina"
+                  className="rounded-2xl relative z-10 w-full h-full object-cover transform transition-transform group-hover:scale-[1.02]"
+                />
+              </motion.div>
+            </div>
+          </CardContent>
+        </Card>
 
         {/* Middle Text Block */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="space-y-6 mb-20"
-        >
-          {middleText.map((text, index) => (
-            <motion.p
-              key={index}
+        <Card className="mb-20 overflow-hidden border-sage-200/50 shadow-lg bg-white/80 backdrop-blur-sm">
+          <CardContent className="p-8">
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="text-sage-600 leading-relaxed text-lg"
+              className="space-y-6"
             >
-              {text}
-            </motion.p>
-          ))}
-        </motion.div>
+              {middleText.map((text, index) => (
+                <motion.p
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="text-sage-600 leading-relaxed text-lg"
+                >
+                  {text}
+                </motion.p>
+              ))}
+            </motion.div>
+          </CardContent>
+        </Card>
 
         {/* Final Text Block with Left Image */}
-        <div className="grid md:grid-cols-2 gap-12 mb-12">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="relative group h-fit order-2 md:order-1"
-          >
-            <div className="absolute inset-0 bg-emerald-200/20 rounded-2xl transform -rotate-3 transition-transform group-hover:rotate-0" />
-            <img
-              src="/lovable-uploads/6b2d2326-1b63-4d8a-aad6-6231146c118f.png"
-              alt="Carly Spina"
-              className="rounded-2xl relative z-10 w-full object-cover transform transition-transform group-hover:scale-[1.02]"
-            />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="space-y-6 order-1 md:order-2"
-          >
-            {closingText.map((text, index) => (
-              <motion.p
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+        <Card className="mb-12 overflow-hidden border-sage-200/50 shadow-lg bg-white/80 backdrop-blur-sm">
+          <CardContent className="p-8">
+            <div className="grid md:grid-cols-2 gap-12">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="text-sage-600 leading-relaxed text-lg"
+                className="relative group h-fit order-2 md:order-1"
               >
-                {text}
-              </motion.p>
-            ))}
-          </motion.div>
-        </div>
+                <div className="absolute inset-0 bg-emerald-200/20 rounded-2xl transform -rotate-3 transition-transform group-hover:rotate-0" />
+                <img
+                  src="/lovable-uploads/6b2d2326-1b63-4d8a-aad6-6231146c118f.png"
+                  alt="Carly Spina"
+                  className="rounded-2xl relative z-10 w-full h-full object-cover transform transition-transform group-hover:scale-[1.02]"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="space-y-6 order-1 md:order-2"
+              >
+                {closingText.map((text, index) => (
+                  <motion.p
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="text-sage-600 leading-relaxed text-lg"
+                  >
+                    {text}
+                  </motion.p>
+                ))}
+              </motion.div>
+            </div>
+          </CardContent>
+        </Card>
         
         <div className="mt-12">
-          <CallToAction 
-            onSecondaryClick={() => {
-              const element = document.querySelector('form[name="newsletter"]');
-              element?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          />
+          <CallToAction />
         </div>
       </motion.div>
     </section>
