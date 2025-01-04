@@ -121,7 +121,7 @@ export const ReikiTrainingContent = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-8 px-8">
             {levels.lists.map((list, lIndex) => (
-              <div key={lIndex} className="bg-sage-50 rounded-xl p-6">
+              <div key={lIndex} className="bg-white/80 backdrop-blur-sm border-sage-200 hover:shadow-lg transition-all duration-300 rounded-xl p-6">
                 <h3 className="text-xl font-semibold mb-4 text-sage-800">{list.title}</h3>
                 <ul className="space-y-3">
                   {list.items.map((item, iIndex) => (
@@ -163,7 +163,7 @@ export const ReikiTrainingContent = () => {
 
           <div className="grid md:grid-cols-2 gap-8 mb-8 px-8">
             {benefits.lists.map((list, lIndex) => (
-              <div key={lIndex} className="bg-sage-50 rounded-xl p-6">
+              <div key={lIndex} className="bg-white/80 backdrop-blur-sm border-sage-200 hover:shadow-lg transition-all duration-300 rounded-xl p-6">
                 <h3 className="text-xl font-semibold mb-4 text-sage-800">{list.title}</h3>
                 <ul className="space-y-3">
                   {list.items.map((item, iIndex) => (

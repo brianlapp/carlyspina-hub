@@ -14,7 +14,7 @@ export const ServiceCard = ({ title, description, icon, delay }: ServiceCardProp
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
       viewport={{ once: true }}
-      className="group relative overflow-hidden rounded-2xl bg-white/80 p-8 shadow-sm transition-all duration-300 hover:shadow-lg backdrop-blur-sm"
+      className="group relative overflow-hidden rounded-2xl bg-white/80 p-6 h-full backdrop-blur-sm border-sage-200 hover:shadow-lg transition-all duration-300"
     >
       <div className="absolute inset-0 bg-gradient-to-b from-sage-50/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       <div className="relative z-10">
