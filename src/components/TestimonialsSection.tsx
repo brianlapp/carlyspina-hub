@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 const testimonials = [
   {
@@ -97,12 +98,14 @@ export const TestimonialsSection = () => {
               ))}
             </div>
           </div>
-          <Button 
-            size="lg" 
-            className="mt-12 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto"
-          >
-            Read More Testimonials
-          </Button>
+          <Link to="/testimonials">
+            <Button 
+              size="lg" 
+              className="mt-12 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto"
+            >
+              Read More Testimonials
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
