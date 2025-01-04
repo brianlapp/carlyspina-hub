@@ -3,7 +3,7 @@ import { ShootingStars } from "../ui/shooting-stars";
 
 export const AkashicRecordsHero = () => {
   return (
-    <section className="relative pt-32 pb-20 px-4 min-h-[60vh] flex items-center overflow-hidden">
+    <section className="relative pt-32 md:pt-40 pb-20 md:pb-24 px-4 min-h-[60vh] flex items-center overflow-hidden">
       <div 
         className="absolute inset-0 z-0"
         style={{
@@ -40,12 +40,12 @@ export const AkashicRecordsHero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="container mx-auto text-center relative z-10"
+        className="container mx-auto text-center relative z-10 px-4 sm:px-6 lg:px-8"
       >
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
           Akashic Records Reading: Unlock the Secrets of Your Soul
         </h1>
-        <p className="text-xl text-white/90 max-w-3xl mx-auto">
+        <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto">
           Access your soul's journey, gain profound insights, and discover your true purpose through the wisdom of the Akashic Records.
         </p>
       </motion.div>

@@ -87,7 +87,7 @@ export const AkashicRecordsContent = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-sage-50 to-white">
+    <div className="bg-gradient-to-b from-sage-50 to-white pt-16 md:pt-24">
       {sections.map((section, index) => (
         <ContentSection
           key={section.title}
@@ -105,10 +105,10 @@ export const AkashicRecordsContent = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="container mx-auto px-4 py-16"
+        className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24"
       >
         <SectionTitle>Benefits of an Akashic Records Reading</SectionTitle>
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-16">
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
@@ -117,12 +117,12 @@ export const AkashicRecordsContent = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="p-6 h-full bg-white/80 backdrop-blur-sm border-sage-200 hover:shadow-lg transition-all duration-300">
-                <h3 className="text-xl font-semibold text-sage-800 mb-4">{benefit.title}</h3>
-                <ul className="space-y-2">
+              <Card className="p-6 md:p-8 h-full bg-white/80 backdrop-blur-sm border-sage-200 hover:shadow-lg transition-all duration-300">
+                <h3 className="text-xl md:text-2xl font-semibold text-sage-800 mb-4">{benefit.title}</h3>
+                <ul className="space-y-3">
                   {benefit.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="text-sage-600 flex items-start">
-                      <span className="mr-2 mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-gradient-to-r from-emerald-400 to-emerald-500" />
+                    <li key={itemIndex} className="text-sage-600 flex items-start text-base md:text-lg">
+                      <span className="mr-3 mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-gradient-to-r from-emerald-400 to-emerald-500" />
                       {item}
                     </li>
                   ))}
@@ -143,10 +143,10 @@ export const AkashicRecordsContent = () => {
               viewport={{ once: true }}
             >
               <AccordionItem value={`item-${index}`} className="border-sage-200">
-                <AccordionTrigger className="text-left text-lg font-medium text-sage-800 hover:text-sage-900 hover:no-underline">
+                <AccordionTrigger className="text-left text-lg md:text-xl font-medium text-sage-800 hover:text-sage-900 hover:no-underline px-4">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-sage-600">
+                <AccordionContent className="text-sage-600 px-4 text-base md:text-lg">
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
