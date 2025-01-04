@@ -12,8 +12,8 @@ export const SpinalEnergeticsContent = () => {
         "Spinal Energetics is a transformative modality that combines physical and energetic practices to promote healing, balance, and alignment within the body. Rooted in the understanding that the spine and nervous system are the gateways to our overall health, this technique works to release stored tension, resistance, and emotional blockages, empowering the body to heal itself naturally.",
         "This unique approach integrates principles of energy healing, intuitive movement, and sound therapy, creating a deeply personalized experience tailored to your body's needs. Spinal Energetics recognizes the intricate connection between mind, body, and soul, helping individuals achieve holistic well-being."
       ],
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-      imageAlt: "Serene landscape representing balance and harmony",
+      image: "/lovable-uploads/bfda3c76-3feb-4464-9ae6-17f6edcd025a.png",
+      imageAlt: "Artistic representation of spinal energetics showing glowing spine and energy fields",
       showButton: true
     },
     {
