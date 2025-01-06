@@ -52,7 +52,7 @@ export const IntroSection = () => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto text-center space-y-6 relative z-10"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
             Welcome to CarlySpina.com
           </h2>
           <p className="text-lg md:text-xl text-sage-600 leading-relaxed">

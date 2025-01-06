@@ -21,7 +21,7 @@ export const TrainingOverview = () => {
             Whether you're new to energy healing or looking to deepen your practice, Reiki Training provides a transformative experience that integrates physical, emotional, and spiritual growth.
           </p>
           <Button 
-            className="bg-emerald-600 text-white hover:bg-emerald-700 transition-colors px-12 py-6 text-lg h-auto"
+            className="bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors px-12 py-6 text-lg h-auto"
             onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
           >
             Begin Your Journey

@@ -73,7 +73,7 @@ export const DesktopNav = ({ services, navItems }: DesktopNavProps) => {
         </NavigationMenuList>
       </NavigationMenu>
       <Button 
-        className="bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
+        className="bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors"
         onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
       >
         Book Now

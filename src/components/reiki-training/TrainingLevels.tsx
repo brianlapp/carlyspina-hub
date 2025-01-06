@@ -64,7 +64,7 @@ export const TrainingLevels = () => {
 
       <div className="text-center mt-8">
         <Button 
-          className="bg-emerald-600 text-white hover:bg-emerald-700 transition-colors px-12 py-6 text-lg h-auto"
+          className="bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors px-12 py-6 text-lg h-auto"
           onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
         >
           Enroll in Reiki Training Now

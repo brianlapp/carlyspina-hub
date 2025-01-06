@@ -35,7 +35,7 @@ export const AboutSection = () => {
               </p>
               <div className="flex gap-4">
                 <Link to="/about">
-                  <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white">
+                  <Button size="lg" className="bg-custom-sage hover:bg-custom-sage/90 text-white">
                     Meet Carly
                   </Button>
                 </Link>

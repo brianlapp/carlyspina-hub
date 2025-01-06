@@ -49,7 +49,7 @@ export const MobileNav = ({ services, navItems, onClose }: MobileNavProps) => {
               </div>
             </nav>
             <Button 
-              className="w-full bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
+              className="w-full bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors"
               onClick={() => {
                 window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank');
                 onClose();

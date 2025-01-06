@@ -62,7 +62,7 @@ export const FooterTeaser = () => {
             />
             <button 
               type="submit" 
-              className="bg-emerald-600 text-white px-6 py-2 rounded hover:bg-emerald-700 transition-colors min-w-[120px]"
+              className="bg-custom-sage text-white px-6 py-2 rounded hover:bg-custom-sage/90 transition-colors min-w-[120px]"
             >
               Subscribe
             </button>

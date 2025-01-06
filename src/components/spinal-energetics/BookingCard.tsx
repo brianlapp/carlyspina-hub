@@ -11,7 +11,7 @@ export const BookingCard = () => {
       viewport={{ once: true }}
       className="bg-white rounded-2xl p-8 shadow-lg border border-sage-100 mb-16"
     >
-      <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+      <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
         Book Your Session Today
       </h2>
       <p className="text-lg text-sage-600 mb-8">
