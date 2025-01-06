@@ -53,7 +53,7 @@ export const TrainingLevels = () => {
             <ul className="space-y-3">
               {level.items.map((item, iIndex) => (
                 <li key={iIndex} className="text-sage-600 flex items-start">
-                  <span className="mr-2 mt-1 text-emerald-500">•</span>
+                  <span className="mr-2 mt-1 text-sage-500">•</span>
                   {item}
                 </li>
               ))}

@@ -42,7 +42,7 @@ export const AboutSection = () => {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-emerald-600 text-emerald-600 hover:bg-emerald-50"
+                  className="border-sage-600 text-sage-600 hover:bg-sage-50"
                   onClick={scrollToServices}
                 >
                   Explore Services

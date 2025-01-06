@@ -65,7 +65,7 @@ export const ReikiTrainingContent = () => {
                 Carly Spina is an experienced Reiki Master with expertise in Usui Reiki, Holy Fire III, and Karuna Reiki. Her teaching style is compassionate, intuitive, and tailored to each student's unique path. Carly's courses are designed to empower you with the confidence, knowledge, and skills to become a proficient Reiki practitioner or teacher.
               </p>
               <Button 
-                className="w-full md:w-auto bg-emerald-600 text-white hover:bg-emerald-700 transition-colors px-6 md:px-12 py-4 md:py-6 text-base md:text-lg h-auto"
+                className="w-full md:w-auto bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors px-6 md:px-12 py-4 md:py-6 text-base md:text-lg h-auto"
                 onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
               >
                 Start Your Training with Carly

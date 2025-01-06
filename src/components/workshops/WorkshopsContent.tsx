@@ -109,7 +109,7 @@ export const WorkshopsContent = () => {
                     </ul>
                   </div>
                   <Button 
-                    className="mt-6 w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 h-auto text-lg"
+                    className="mt-6 w-full bg-custom-sage hover:bg-custom-sage/90 text-white py-6 h-auto text-lg"
                     onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
                   >
                     Explore Upcoming {workshop.title} Workshops

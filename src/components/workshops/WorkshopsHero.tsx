@@ -16,8 +16,16 @@ export const WorkshopsHero = () => {
       </div>
 
       <ShootingStars
-        starColor="#84cc16"
-        trailColor="rgba(132, 204, 22, 0.3)"
+        starColor="#8c947d"
+        trailColor="rgba(140, 148, 125, 0.3)"
+</lov-search>
+<lov-search>
+        starColor="#bef264"
+        trailColor="rgba(190, 242, 100, 0.3)"
+</lov-search>
+<lov-replace>
+        starColor="#aeb791"
+        trailColor="rgba(174, 183, 145, 0.3)"
         minSpeed={4}
         maxSpeed={8}
         minDelay={800}
