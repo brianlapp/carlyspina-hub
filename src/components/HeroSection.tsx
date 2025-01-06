@@ -10,7 +10,7 @@ export const HeroSection = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url(${isMobile ? '/lovable-uploads/ed499d1c-b9e8-41c7-90c8-c2b63d7a7c1d.png' : '/lovable-uploads/6e73e5d4-c94c-4c3f-8ff1-b421f6d24323.png'})`,
+          backgroundImage: `url(${isMobile ? './lovable-uploads/ed499d1c-b9e8-41c7-90c8-c2b63d7a7c1d.png' : './lovable-uploads/6e73e5d4-c94c-4c3f-8ff1-b421f6d24323.png'})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: isMobile ? 'scroll' : 'fixed'
