@@ -61,7 +61,7 @@ export const IntroSection = () => {
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <Button 
               onClick={handleBookNow}
-              className="bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
+              className="bg-custom-sage hover:bg-custom-sage/90 text-white transition-colors"
               size="lg"
             >
               Book Now
