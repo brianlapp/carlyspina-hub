@@ -35,7 +35,7 @@ export const DesktopNav = ({ services, navItems }: DesktopNavProps) => {
           </NavigationMenuItem>
           <NavigationMenuItem className="relative">
             <NavigationMenuTrigger 
-              className={`text-sage-600 hover:text-sage-900 transition-colors ${
+              className={`text-sage-600 hover:text-sage-900 transition-colors text-[0.9rem] ${
                 isServicePage ? "text-sage-900 font-medium" : ""
               }`}
               style={{ backgroundColor: 'transparent' }}
