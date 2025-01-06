@@ -34,7 +34,7 @@ export const ReikiTrainingContent = () => {
                   "Explore ethical considerations and best practices for professional Reiki sessions"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start text-base md:text-lg text-sage-600">
-                    <span className="mr-3 text-emerald-500 flex-shrink-0">•</span>
+                    <span className="mr-3 text-custom-sage flex-shrink-0">•</span>
                     {item}
                   </li>
                 ))}
@@ -68,7 +68,7 @@ export const ReikiTrainingContent = () => {
                 className="w-full md:w-auto bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors px-6 md:px-12 py-4 md:py-6 text-base md:text-lg h-auto"
                 onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
               >
-                Start Your Training with Carly
+                Book Training Session
               </Button>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-lg h-[250px] md:h-[400px]">
@@ -94,10 +94,10 @@ export const ReikiTrainingContent = () => {
             Are you ready to unlock your healing potential? Join Carly Spina for an immersive Reiki Training experience and step into the world of energy healing. With personalized guidance and a supportive community, you'll gain the tools to create meaningful change in your life and the lives of others.
           </p>
           <Button 
-            className="w-full md:w-auto bg-emerald-600 text-white hover:bg-emerald-700 transition-colors px-6 md:px-12 py-4 md:py-6 text-base md:text-lg h-auto"
+            className="w-full md:w-auto bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors px-6 md:px-12 py-4 md:py-6 text-base md:text-lg h-auto"
             onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
           >
-            Enroll in Reiki Training Now
+            Start Your Journey
           </Button>
         </motion.div>
       </div>
