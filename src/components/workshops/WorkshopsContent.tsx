@@ -69,14 +69,14 @@ export const WorkshopsContent = () => {
           </p>
           <Button 
             size="lg"
-            className="mt-8 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto w-full max-w-xl mx-auto"
+            className="mt-8 bg-custom-sage hover:bg-custom-sage/90 text-white px-12 py-6 text-lg h-auto w-full max-w-xl mx-auto"
             onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
           >
             Explore Upcoming Workshops and Reserve Your Spot Today
           </Button>
         </motion.div>
 
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
           Our Signature Workshops
         </h2>
 
@@ -183,7 +183,7 @@ export const WorkshopsContent = () => {
             </p>
             <Button 
               size="lg"
-              className="bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto w-full max-w-xl mx-auto"
+              className="bg-custom-sage hover:bg-custom-sage/90 text-white px-12 py-6 text-lg h-auto w-full max-w-xl mx-auto"
               onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
             >
               Explore Upcoming Workshops and Reserve Your Spot Today
