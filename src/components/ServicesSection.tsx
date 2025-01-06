@@ -50,7 +50,7 @@ export const ServicesSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
             Explore Our Transformative Services
           </h2>
           <p className="text-lg text-sage-600 max-w-3xl mx-auto mb-16">
@@ -67,7 +67,7 @@ export const ServicesSection = () => {
           >
             <Button 
               size="lg" 
-              className="mt-16 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto shadow-lg hover:shadow-xl transition-all duration-300"
+              className="mt-16 bg-custom-sage hover:bg-custom-sage/90 text-white px-12 py-6 text-lg h-auto shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={handleBookNow}
             >
               Book Now

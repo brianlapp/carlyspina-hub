@@ -52,7 +52,7 @@ export const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
             Here's What Clients Are Saying
           </h2>
           <div className="max-w-5xl mx-auto">
@@ -77,8 +77,8 @@ export const TestimonialsSection = () => {
                 ))}
               </CarouselContent>
               <div className="hidden md:block">
-                <CarouselPrevious className="-left-12 bg-emerald-600 hover:bg-emerald-700 text-white" />
-                <CarouselNext className="-right-12 bg-emerald-600 hover:bg-emerald-700 text-white" />
+                <CarouselPrevious className="-left-12 bg-custom-sage hover:bg-custom-sage/90 text-white" />
+                <CarouselNext className="-right-12 bg-custom-sage hover:bg-custom-sage/90 text-white" />
               </div>
             </Carousel>
             
@@ -90,8 +90,8 @@ export const TestimonialsSection = () => {
                   className={cn(
                     "h-2.5 w-2.5 rounded-full transition-all duration-300",
                     current === index 
-                      ? "bg-emerald-600 w-4" 
-                      : "bg-emerald-200 hover:bg-emerald-300"
+                      ? "bg-custom-sage w-4" 
+                      : "bg-sage-200 hover:bg-sage-300"
                   )}
                   aria-label={`Go to slide ${index + 1}`}
                 />
@@ -101,7 +101,7 @@ export const TestimonialsSection = () => {
           <Link to="/testimonials">
             <Button 
               size="lg" 
-              className="mt-12 bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto"
+              className="mt-12 bg-custom-sage hover:bg-custom-sage/90 text-white px-12 py-6 text-lg h-auto"
             >
               Read More Testimonials
             </Button>

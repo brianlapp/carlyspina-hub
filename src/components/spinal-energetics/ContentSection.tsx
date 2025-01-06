@@ -29,7 +29,7 @@ export const ContentSection = ({
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 items-center`}>
           <div className="lg:w-1/2 px-4 sm:px-6">
-            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
               {title}
             </h2>
             {content.map((paragraph, pIndex) => (
@@ -41,7 +41,7 @@ export const ContentSection = ({
             {showButton && (
               <div className="mt-8">
                 <Button 
-                  className="bg-emerald-600 text-white hover:bg-emerald-700 transition-colors px-12 py-6 text-lg h-auto"
+                  className="bg-custom-sage hover:bg-custom-sage/90 text-white px-12 py-6 text-lg h-auto"
                   onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
                 >
                   Book Your Session Now
