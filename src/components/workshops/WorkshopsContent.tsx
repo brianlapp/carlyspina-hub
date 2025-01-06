@@ -69,10 +69,10 @@ export const WorkshopsContent = () => {
           </p>
           <Button 
             size="lg"
-            className="mt-8 bg-custom-sage hover:bg-custom-sage/90 text-white px-12 py-6 text-lg h-auto w-full max-w-xl mx-auto"
+            className="mt-8 bg-custom-sage hover:bg-custom-sage/90 text-white px-6 py-4 text-base md:text-lg h-auto w-full md:w-auto"
             onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
           >
-            Explore Upcoming Workshops and Reserve Your Spot Today
+            Book Workshop
           </Button>
         </motion.div>
 
@@ -109,10 +109,10 @@ export const WorkshopsContent = () => {
                     </ul>
                   </div>
                   <Button 
-                    className="mt-6 w-full bg-custom-sage hover:bg-custom-sage/90 text-white py-6 h-auto text-lg"
+                    className="mt-6 w-full bg-custom-sage hover:bg-custom-sage/90 text-white py-4 h-auto text-base md:text-lg"
                     onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
                   >
-                    Explore Upcoming {workshop.title} Workshops
+                    Book {workshop.title}
                   </Button>
                 </div>
               </Card>
@@ -183,10 +183,10 @@ export const WorkshopsContent = () => {
             </p>
             <Button 
               size="lg"
-              className="bg-custom-sage hover:bg-custom-sage/90 text-white px-12 py-6 text-lg h-auto w-full max-w-xl mx-auto"
+              className="bg-custom-sage hover:bg-custom-sage/90 text-white px-6 py-4 text-base md:text-lg h-auto w-full md:w-auto"
               onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
             >
-              Explore Upcoming Workshops and Reserve Your Spot Today
+              Book Workshop
             </Button>
           </motion.div>
         </div>
