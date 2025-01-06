@@ -88,6 +88,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'custom-sage': {
+          light: '#d3d5cd', // Lighter sage color for gradient start
+          DEFAULT: '#8c947d', // The new color requested
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -4,7 +4,7 @@ export const Logo = () => {
   return (
     <Link to="/" className="flex items-center">
       <img 
-        src="/lovable-uploads/51d316bb-a400-4319-953f-ceb5c5a653da.png" 
+        src="/lovable-uploads/f97eb233-41c9-4fa0-9dab-95dd06d2800e.png" 
         alt="Lotus" 
         className="h-8 w-auto"
       />

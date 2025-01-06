@@ -39,14 +39,14 @@ export const CTASection = () => {
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <Button 
-              className="bg-emerald-600 hover:bg-emerald-700 text-white px-12 py-6 text-lg h-auto"
+              className="bg-custom-sage hover:bg-custom-sage/90 text-white px-12 py-6 text-lg h-auto"
               onClick={handleBookNow}
             >
               Book Now
             </Button>
             <Button 
               variant="outline" 
-              className="border-white text-white bg-white/10 hover:bg-emerald-700 px-12 py-6 text-lg h-auto"
+              className="border-white text-white bg-white/10 hover:bg-custom-sage px-12 py-6 text-lg h-auto"
               onClick={scrollToServices}
             >
               Explore Services
