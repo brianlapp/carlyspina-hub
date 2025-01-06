@@ -38,19 +38,19 @@ export const CallToAction = ({
       viewport={{ once: true }}
       className="bg-white rounded-2xl p-8 border border-sage-100 relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-sage-50/50 to-emerald-50/50 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-r from-sage-50/50 to-sage-50/50 z-0" />
       
       <div className="relative z-10">
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
           <Button 
-            className="bg-emerald-600 text-white hover:bg-emerald-700 transition-colors min-w-[200px] h-14 text-lg"
+            className="bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors min-w-[200px] h-14 text-lg"
             onClick={() => window.open(primaryLink, '_blank')}
           >
             {primaryText}
           </Button>
           <Button 
             variant="outline"
-            className="border-emerald-600 text-emerald-600 hover:bg-emerald-50 min-w-[200px] h-14 text-lg"
+            className="border-custom-sage text-custom-sage hover:bg-custom-sage/10 min-w-[200px] h-14 text-lg"
             onClick={() => setShowForm(!showForm)}
           >
             {secondaryText}
@@ -98,7 +98,7 @@ export const CallToAction = ({
               </div>
               <Button 
                 type="submit"
-                className="w-full bg-emerald-600 text-white hover:bg-emerald-700 transition-colors h-12"
+                className="w-full bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors h-12"
               >
                 Subscribe
               </Button>
