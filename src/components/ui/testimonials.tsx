@@ -54,7 +54,7 @@ function Testimonials() {
     <div className="w-full py-20 lg:py-40 bg-gradient-to-b from-sage-50/50 to-transparent">
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-center bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
             Client Experiences
           </h2>
           <p className="text-center text-sage-600 text-lg max-w-2xl mx-auto">
@@ -68,7 +68,7 @@ function Testimonials() {
                     <img 
                       src="/lovable-uploads/906d4f53-16be-4e1b-bf5c-13940464b3a7.png" 
                       alt="Lotus" 
-                      className="w-12 h-8 object-contain text-emerald-600 mb-4"
+                      className="w-12 h-8 object-contain text-custom-sage mb-4"
                     />
                     <div className="flex flex-col gap-4">
                       <div className="flex flex-col">
@@ -80,8 +80,8 @@ function Testimonials() {
                         </p>
                       </div>
                       <div className="flex items-center gap-3 mt-4">
-                        <Avatar className="h-10 w-10 bg-emerald-100 border-2 border-emerald-200">
-                          <AvatarFallback className="text-emerald-700 font-medium">
+                        <Avatar className="h-10 w-10 bg-sage-100 border-2 border-sage-200">
+                          <AvatarFallback className="text-sage-700 font-medium">
                             {testimonial.author.split(' ').map(n => n[0]).join('')}
                           </AvatarFallback>
                         </Avatar>
@@ -96,8 +96,8 @@ function Testimonials() {
               ))}
             </CarouselContent>
             <div className="hidden md:block">
-              <CarouselPrevious className="-left-12 bg-emerald-600 hover:bg-emerald-700 text-white" />
-              <CarouselNext className="-right-12 bg-emerald-600 hover:bg-emerald-700 text-white" />
+              <CarouselPrevious className="-left-12 bg-custom-sage hover:bg-custom-sage/90 text-white" />
+              <CarouselNext className="-right-12 bg-custom-sage hover:bg-custom-sage/90 text-white" />
             </div>
           </Carousel>
           
@@ -109,8 +109,8 @@ function Testimonials() {
                 className={cn(
                   "h-2.5 w-2.5 rounded-full transition-all duration-300",
                   current === index 
-                    ? "bg-emerald-600 w-4" 
-                    : "bg-emerald-200 hover:bg-emerald-300"
+                    ? "bg-custom-sage w-4" 
+                    : "bg-sage-200 hover:bg-sage-300"
                 )}
                 aria-label={`Go to slide ${index + 1}`}
               />
