@@ -123,7 +123,7 @@ export const AkashicRecordsContent = () => {
                   <ul className="space-y-3">
                     {benefit.items.map((item, itemIndex) => (
                       <li key={itemIndex} className="text-sage-600 flex items-start text-base md:text-lg">
-                        <span className="mr-3 mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-gradient-to-r from-emerald-400 to-emerald-500" />
+                        <span className="mr-3 mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-gradient-to-r from-sage-400 to-sage-500" />
                         {item}
                       </li>
                     ))}
