@@ -66,7 +66,7 @@ function Testimonials() {
                 <CarouselItem className="lg:basis-1/2" key={index}>
                   <div className="bg-white/80 backdrop-blur-sm rounded-xl h-full lg:col-span-2 p-8 border border-sage-200 hover:shadow-lg transition-all duration-300">
                     <img 
-                      src="/lovable-uploads/906d4f53-16be-4e1b-bf5c-13940464b3a7.png" 
+                      src="/lotus-icon.png" 
                       alt="Lotus" 
                       className="w-12 h-8 object-contain text-custom-sage mb-4"
                     />
