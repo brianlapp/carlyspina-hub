@@ -101,9 +101,9 @@ export const TestimonialsSection = () => {
           <Link to="/testimonials">
             <Button 
               size="lg" 
-              className="mt-12 bg-custom-sage hover:bg-custom-sage/90 text-white px-12 py-6 text-lg h-auto"
+              className="mt-12 bg-custom-sage hover:bg-custom-sage/90 text-white px-8 py-6 text-lg h-auto w-full sm:w-auto"
             >
-              Read More Testimonials
+              View All Reviews
             </Button>
           </Link>
         </motion.div>
