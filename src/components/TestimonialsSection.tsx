@@ -43,7 +43,7 @@ export const TestimonialsSection = () => {
   const scrollTo = (index: number) => api?.scrollTo(index);
 
   return (
-    <section className="py-20 bg-sage-50">
+    <section className="py-20 bg-gradient-to-b from-white via-sage-50/30 to-[#626857]/20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-custom-sage-light to-[#626857] bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
             Here's What Clients Are Saying
           </h2>
           <div className="max-w-5xl mx-auto">
