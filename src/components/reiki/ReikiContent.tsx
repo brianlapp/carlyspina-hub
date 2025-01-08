@@ -83,7 +83,7 @@ export const ReikiContent = () => {
   };
 
   return (
-    <div className="py-16 bg-gradient-to-b from-white to-sage-50">
+    <div className="py-16 bg-gradient-to-b from-white via-[#626857]/5 to-[#626857]/10">
       <div className="container mx-auto px-4">
         {sections.map((section, index) => (
           <ContentSection
@@ -102,7 +102,7 @@ export const ReikiContent = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="mb-24 bg-white rounded-2xl p-8 shadow-lg"
+          className="mb-24 px-4"
         >
           <SectionTitle>{benefits.title}</SectionTitle>
           {benefits.content.map((paragraph, pIndex) => (

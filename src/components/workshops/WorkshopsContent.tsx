@@ -55,7 +55,7 @@ const workshops = [
 
 export const WorkshopsContent = () => {
   return (
-    <div className="py-20 bg-gradient-to-b from-white to-sage-50">
+    <div className="py-20 bg-gradient-to-b from-white via-[#626857]/5 to-[#626857]/10">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -76,7 +76,7 @@ export const WorkshopsContent = () => {
           </Button>
         </motion.div>
 
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#626857]">
           Our Signature Workshops
         </h2>
 
@@ -89,7 +89,7 @@ export const WorkshopsContent = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full overflow-hidden bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 border border-sage-200/50 shadow-sm">
+              <Card className="h-full overflow-hidden bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 border border-[#626857]/10 shadow-sm">
                 <div className="aspect-video relative overflow-hidden">
                   <img 
                     src={workshop.image} 
@@ -98,7 +98,7 @@ export const WorkshopsContent = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-semibold mb-4 text-sage-900">{workshop.title}</h3>
+                  <h3 className="text-2xl font-semibold mb-4 text-[#626857]">{workshop.title}</h3>
                   <p className="text-sage-600 mb-6">{workshop.description}</p>
                   <div className="space-y-2">
                     <h4 className="font-semibold text-sage-900">Benefits:</h4>
@@ -109,7 +109,7 @@ export const WorkshopsContent = () => {
                     </ul>
                   </div>
                   <Button 
-                    className="mt-6 w-full bg-custom-sage hover:bg-custom-sage/90 text-white py-4 h-auto text-base md:text-lg"
+                    className="mt-6 w-full bg-[#626857] hover:bg-[#626857]/90 text-white py-4 h-auto text-base md:text-lg"
                     onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
                   >
                     Book {workshop.title}
@@ -126,7 +126,7 @@ export const WorkshopsContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-sage-200/50 shadow-sm"
+            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-[#626857]/10 shadow-sm"
           >
             <h2 className="text-3xl font-bold mb-6 text-sage-900">How Do Our Workshops Work?</h2>
             <p className="text-sage-600 mb-4">
@@ -139,7 +139,7 @@ export const WorkshopsContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-sage-200/50 shadow-sm"
+            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-[#626857]/10 shadow-sm"
           >
             <h2 className="text-3xl font-bold mb-6 text-sage-900">Why Choose Group Healing Workshops?</h2>
             <p className="text-sage-600 mb-4">
@@ -158,7 +158,7 @@ export const WorkshopsContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-sage-200/50 shadow-sm"
+            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-[#626857]/10 shadow-sm"
           >
             <h2 className="text-3xl font-bold mb-6 text-sage-900">Who Are These Workshops For?</h2>
             <p className="text-sage-600 mb-4">Our workshops are perfect for:</p>
