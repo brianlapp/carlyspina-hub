@@ -52,7 +52,7 @@ export const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-custom-sage-light to-[#626857] bg-clip-text text-transparent">
             Here's What Clients Are Saying
           </h2>
           <div className="max-w-5xl mx-auto">
