@@ -55,7 +55,7 @@ const workshops = [
 
 export const WorkshopsContent = () => {
   return (
-    <div className="py-20 bg-gradient-to-b from-white via-primary/5 to-primary/10">
+    <div className="py-20 bg-gradient-to-b from-white to-sage-50">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -89,7 +89,7 @@ export const WorkshopsContent = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full overflow-hidden bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 border border-primary/10 shadow-sm">
+              <Card className="h-full overflow-hidden bg-white/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 border border-sage-200/50 shadow-sm">
                 <div className="aspect-video relative overflow-hidden">
                   <img 
                     src={workshop.image} 

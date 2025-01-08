@@ -83,7 +83,7 @@ export const ReikiContent = () => {
   };
 
   return (
-    <div className="py-16 bg-gradient-to-b from-white via-primary/5 to-primary/10">
+    <div className="py-16 bg-gradient-to-b from-white to-sage-50">
       <div className="container mx-auto px-4">
         {sections.map((section, index) => (
           <ContentSection

@@ -16,6 +16,7 @@ interface DesktopNavProps {
 export const DesktopNav = ({ services, navItems }: DesktopNavProps) => {
   const location = useLocation();
   
+  // Check if current path is a service page
   const isServicePage = services.some(service => location.pathname === service.path);
   
   return (
@@ -25,8 +26,8 @@ export const DesktopNav = ({ services, navItems }: DesktopNavProps) => {
           <NavigationMenuItem>
             <Link 
               to="/"
-              className={`px-4 py-2 text-primary hover:text-primary-dark transition-colors text-base ${
-                location.pathname === "/" ? "text-primary-dark font-medium" : ""
+              className={`px-4 py-2 text-sage-600 hover:text-sage-900 transition-colors text-base ${
+                location.pathname === "/" ? "text-sage-900 font-medium" : ""
               }`}
             >
               Home
@@ -34,8 +35,8 @@ export const DesktopNav = ({ services, navItems }: DesktopNavProps) => {
           </NavigationMenuItem>
           <NavigationMenuItem className="relative">
             <NavigationMenuTrigger 
-              className={`text-primary hover:text-primary-dark transition-colors text-base ${
-                isServicePage ? "text-primary-dark font-medium" : ""
+              className={`text-sage-600 hover:text-sage-900 transition-colors text-base ${
+                isServicePage ? "text-sage-900 font-medium" : ""
               }`}
               style={{ backgroundColor: 'transparent' }}
             >
@@ -47,8 +48,8 @@ export const DesktopNav = ({ services, navItems }: DesktopNavProps) => {
                   <Link
                     key={service.name}
                     to={service.path}
-                    className={`block px-4 py-2 text-primary hover:text-primary-dark hover:bg-primary/5 rounded-md transition-colors text-base ${
-                      location.pathname === service.path ? "text-primary-dark font-medium bg-primary/5" : ""
+                    className={`block px-4 py-2 text-sage-600 hover:text-sage-900 hover:bg-sage-50 rounded-md transition-colors text-base ${
+                      location.pathname === service.path ? "text-sage-900 font-medium bg-sage-50" : ""
                     }`}
                   >
                     {service.name}
@@ -61,8 +62,8 @@ export const DesktopNav = ({ services, navItems }: DesktopNavProps) => {
             <NavigationMenuItem key={item.name}>
               <Link 
                 to={item.path}
-                className={`px-4 py-2 text-primary hover:text-primary-dark transition-colors text-base ${
-                  location.pathname === item.path ? "text-primary-dark font-medium" : ""
+                className={`px-4 py-2 text-sage-600 hover:text-sage-900 transition-colors text-base ${
+                  location.pathname === item.path ? "text-sage-900 font-medium" : ""
                 }`}
               >
                 {item.name}
@@ -72,7 +73,7 @@ export const DesktopNav = ({ services, navItems }: DesktopNavProps) => {
         </NavigationMenuList>
       </NavigationMenu>
       <Button 
-        className="bg-primary text-white hover:bg-primary-dark transition-colors"
+        className="bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors"
         onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
       >
         Book Now
