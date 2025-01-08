@@ -73,7 +73,7 @@ export const FooterTeaser = () => {
     href="https://brandinglabs.ca" 
     target="_blank" 
     rel="noopener noreferrer" 
-    className="transition-colors hover:text-sage-600"
+    className="transition-colors hover:underline"
   >
     brandinglabs.ca
   </a>
