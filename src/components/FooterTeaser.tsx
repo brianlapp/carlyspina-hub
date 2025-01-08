@@ -35,7 +35,7 @@ export const FooterTeaser = () => {
           <motion.form 
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="js-cm-form max-w-3xl mx-auto flex flex-wrap gap-4 justify-center"
+            className="js-cm-form max-w-3xl mx-auto flex flex-wrap gap-4 justify-center mb-12"
             id="subForm"
             action="https://www.createsend.com/t/subscribeerror?description="
             method="post"
@@ -67,6 +67,9 @@ export const FooterTeaser = () => {
               Subscribe
             </button>
           </motion.form>
+          <div className="text-sm text-gray-500">
+            Site created by <a href="https://brandinglabs.ca" target="_blank" rel="noopener noreferrer" className="hover:text-[#626857] transition-colors">brandinglabs.ca</a>
+          </div>
         </motion.div>
       </div>
     </section>
