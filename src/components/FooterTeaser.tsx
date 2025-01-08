@@ -67,9 +67,17 @@ export const FooterTeaser = () => {
               Subscribe
             </button>
           </motion.form>
-          <div className="text-sm text-gray-500 py-20">
-            Site created by <a href="https://brandinglabs.ca" target="_blank" rel="noopener noreferrer" className="hover:text-[#626857] transition-colors">brandinglabs.ca</a>
-          </div>
+          <div className="py-20 text-sm text-gray-500">
+  Site created by{" "}
+  <a 
+    href="https://brandinglabs.ca" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="transition-colors hover:text-gray-600"
+  >
+    brandinglabs.ca
+  </a>
+</div>
         </motion.div>
       </div>
     </section>
