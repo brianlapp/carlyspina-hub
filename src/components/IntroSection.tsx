@@ -19,8 +19,7 @@ export const IntroSection = () => {
   };
 
   return (
-    <section className="relative py-24 bg-gradient-to-b from-sage-50/50 to-white overflow-hidden">
-      {/* ShootingStars with lower z-index */}
+    <section className="relative py-24 bg-gradient-to-b from-white via-sage-50/30 to-[#626857]/20 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <ShootingStars
           starColor="#8c947d"
