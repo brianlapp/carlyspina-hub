@@ -29,7 +29,7 @@ export const AboutSection = () => {
               />
             </div>
             <div className="text-left">
-              <h2 className="section-title text-left">About Carly</h2>
+              <h2 className="section-title text-left text-3xl mb-4">About Carly</h2>
               <p className="text-sage-600 mb-8">
                 With years of experience and a deep commitment to her practice, Carly combines ancient wisdom with modern techniques to create a safe, nurturing space for healing and growth. Whether you're new to energy work or a seasoned seeker, Carly is here to support your journey.
               </p>
