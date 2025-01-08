@@ -89,8 +89,8 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         'custom-sage': {
-          light: '#aeb791', // Updated from #d3d5cd to #aeb791
-          DEFAULT: '#8c947d',
+          light: '#626857', // Updated to new color
+          DEFAULT: '#626857', // Updated to new color
         },
       },
       borderRadius: {
