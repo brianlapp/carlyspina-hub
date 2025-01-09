@@ -146,38 +146,34 @@ export const SpinalEnergeticsContent = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="mb-24 px-8"
+          className="mb-24"
         >
-          <SectionTitle>Who Can Benefit from Spinal Energetics?</SectionTitle>
-          <p className="text-lg text-sage-600 mb-6">
-            Spinal Energetics is suitable for individuals seeking holistic healing, whether addressing specific physical issues or pursuing overall well-being. This modality can benefit:
-          </p>
-          <ul className="list-none space-y-4 mb-8">
-            {[
-              "Those with chronic pain or tension",
-              "Individuals dealing with stress, anxiety, or emotional blockages",
-              "People seeking greater alignment and balance in their lives",
-              "Anyone open to exploring the profound wisdom of their body's natural healing capabilities"
-            ].map((item, index) => (
-              <li key={index} className="flex items-center text-lg text-sage-600">
-                <span className="mr-3 text-emerald-500">•</span>
-                {item}
-              </li>
-            ))}
-          </ul>
-        </motion.div>
+          <div className="bg-sage-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+            <h2 className="text-3xl font-bold mb-6 text-sage-800">Who Can Benefit from Spinal Energetics?</h2>
+            <p className="text-lg text-sage-600 mb-6">
+              Spinal Energetics is suitable for individuals seeking holistic healing, whether addressing specific physical issues or pursuing overall well-being. This modality can benefit:
+            </p>
+            <ul className="list-none space-y-4 mb-8">
+              {[
+                "Those with chronic pain or tension",
+                "Individuals dealing with stress, anxiety, or emotional blockages",
+                "People seeking greater alignment and balance in their lives",
+                "Anyone open to exploring the profound wisdom of their body's natural healing capabilities"
+              ].map((item, index) => (
+                <li key={index} className="flex items-center text-lg text-sage-600 p-3 bg-white rounded-lg shadow-sm">
+                  <span className="mr-3 text-emerald-500">•</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="mb-24 px-8"
-        >
-          <SectionTitle>Why Choose Spinal Energetics?</SectionTitle>
-          <p className="text-lg text-sage-600 mb-8">
-            Spinal Energetics goes beyond conventional approaches to healing by addressing the root causes of imbalance. It acknowledges the interconnectedness of your physical, emotional, and energetic systems, empowering you to reclaim your health and vitality in a profound and lasting way.
-          </p>
+            <div className="mt-8 p-6 bg-white rounded-xl shadow-sm">
+              <h2 className="text-2xl font-bold mb-4 text-sage-800">Why Choose Spinal Energetics?</h2>
+              <p className="text-lg text-sage-600">
+                Spinal Energetics goes beyond conventional approaches to healing by addressing the root causes of imbalance. It acknowledges the interconnectedness of your physical, emotional, and energetic systems, empowering you to reclaim your health and vitality in a profound and lasting way.
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         <BookingCard />
