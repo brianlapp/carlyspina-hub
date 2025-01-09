@@ -51,20 +51,20 @@ function Testimonials() {
   const scrollTo = (index: number) => api?.scrollTo(index);
 
   return (
-    <div className="w-full py-20 lg:py-40 bg-gradient-to-b from-sage-50/50 to-transparent">
+    <div className="w-full py-20 lg:py-40">
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-center bg-[#f4f4f2] bg-clip-text text-transparent">
             Client Experiences
           </h2>
-          <p className="text-center text-sage-600 text-lg max-w-2xl mx-auto">
+          <p className="text-center text-white/90 text-lg max-w-2xl mx-auto">
             Read how our healing services have transformed lives and brought peace, balance, and renewal to our cherished clients
           </p>
           <Carousel setApi={setApi} className="w-full">
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem className="lg:basis-1/2" key={index}>
-                  <div className="bg-white/80 backdrop-blur-sm rounded-xl h-full lg:col-span-2 p-8 border border-sage-200 hover:shadow-lg transition-all duration-300">
+                  <div className="bg-[#f4f4f2] backdrop-blur-sm rounded-xl h-full lg:col-span-2 p-8 border border-sage-200 hover:shadow-lg transition-all duration-300">
                     <img 
                       src="/lotus-icon.png" 
                       alt="Lotus" 
