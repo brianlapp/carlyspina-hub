@@ -133,35 +133,54 @@ export const AkashicRecordsContent = () => {
             ))}
           </div>
 
-          <SectionTitle>Frequently Asked Questions</SectionTitle>
-          <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto mb-16">
-            {faqs.map((faq, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <AccordionItem value={`item-${index}`} className="border-sage-200">
-                  <AccordionTrigger className="text-left text-lg md:text-xl font-medium text-sage-800 hover:text-sage-900 hover:no-underline px-4">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-sage-600 px-4 text-base md:text-lg">
-                    <motion.div
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      {faq.answer}
-                    </motion.div>
-                  </AccordionContent>
-                </AccordionItem>
-              </motion.div>
-            ))}
-          </Accordion>
+          <div className="max-w-3xl mx-auto mb-16">
+            <Card className="p-8 md:p-12 bg-white shadow-lg">
+              <SectionTitle>Frequently Asked Questions</SectionTitle>
+              <Accordion type="single" collapsible className="w-full">
+                {faqs.map((faq, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                  >
+                    <AccordionItem value={`item-${index}`} className="border-sage-200">
+                      <AccordionTrigger className="text-left text-lg md:text-xl font-medium text-sage-800 hover:text-sage-900 hover:no-underline px-4">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-sage-600 px-4 text-base md:text-lg">
+                        <motion.div
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.3 }}
+                        >
+                          {faq.answer}
+                        </motion.div>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
+                ))}
+              </Accordion>
+            </Card>
+          </div>
 
-          <BookingCard />
+          <div className="max-w-3xl mx-auto">
+            <Card className="p-8 md:p-12 bg-white shadow-lg text-center">
+              <SectionTitle>Join Us for a Workshop</SectionTitle>
+              <p className="text-base md:text-lg text-sage-600 mb-8">
+                Experience the transformative power of Akashic Records in our immersive workshops. 
+                Learn to access and interpret the records under expert guidance, and connect with 
+                like-minded individuals on their spiritual journey.
+              </p>
+              <Button 
+                className="w-full md:w-auto bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors px-6 md:px-12 py-4 md:py-6 text-base md:text-lg h-auto"
+                onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+              >
+                Register Now
+              </Button>
+            </Card>
+          </div>
         </motion.section>
       </div>
     </div>
