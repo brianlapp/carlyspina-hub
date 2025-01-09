@@ -43,7 +43,7 @@ export const TestimonialsSection = () => {
   const scrollTo = (index: number) => api?.scrollTo(index);
 
   return (
-    <section className="py-20 bg-[#f4f4f2]">
+    <section className="py-20 bg-[#626857]">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-12 text-white">
             Here's What Clients Are Saying
           </h2>
           <div className="max-w-5xl mx-auto">
@@ -68,7 +68,7 @@ export const TestimonialsSection = () => {
                 {testimonials.map((testimonial, index) => (
                   <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/2">
                     <div className="p-1">
-                      <div className="bg-white rounded-lg shadow-lg p-8 h-full border border-gray-100">
+                      <div className="bg-white rounded-lg shadow-lg p-8 h-full border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                         <p className="text-gray-700 italic mb-6 leading-relaxed">{testimonial.content}</p>
                         <p className="text-gray-900 font-semibold">- {testimonial.author}</p>
                       </div>
@@ -77,8 +77,8 @@ export const TestimonialsSection = () => {
                 ))}
               </CarouselContent>
               <div className="hidden md:block">
-                <CarouselPrevious className="-left-12 bg-custom-sage hover:bg-custom-sage/90 text-white" />
-                <CarouselNext className="-right-12 bg-custom-sage hover:bg-custom-sage/90 text-white" />
+                <CarouselPrevious className="-left-12 bg-white hover:bg-white/90 text-[#626857]" />
+                <CarouselNext className="-right-12 bg-white hover:bg-white/90 text-[#626857]" />
               </div>
             </Carousel>
             
@@ -90,8 +90,8 @@ export const TestimonialsSection = () => {
                   className={cn(
                     "h-2.5 w-2.5 rounded-full transition-all duration-300",
                     current === index 
-                      ? "bg-custom-sage w-4" 
-                      : "bg-sage-200 hover:bg-sage-300"
+                      ? "bg-white w-4" 
+                      : "bg-white/50 hover:bg-white/75"
                   )}
                   aria-label={`Go to slide ${index + 1}`}
                 />
@@ -101,7 +101,7 @@ export const TestimonialsSection = () => {
           <Link to="/testimonials">
             <Button 
               size="lg" 
-              className="mt-12 bg-custom-sage hover:bg-custom-sage/90 text-white px-8 py-6 text-lg h-auto w-full sm:w-auto"
+              className="mt-12 bg-[#f4f4f2] hover:bg-[#f4f4f2]/90 text-[#626857] px-8 py-6 text-lg h-auto w-full sm:w-auto font-semibold"
             >
               View All Reviews
             </Button>
