@@ -82,105 +82,145 @@ export const SpinalEnergeticsContent = () => {
   return (
     <div className="py-16 bg-[#626857]">
       <div className="container mx-auto px-4">
-        {sections.map((section, index) => (
-          <ContentSection
-            key={section.title}
-            title={section.title}
-            content={section.content}
-            image={section.image}
-            imageAlt={section.imageAlt}
-            showButton={section.showButton}
-            reverse={index % 2 !== 0}
-          />
-        ))}
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="mb-24 bg-[#f4f4f2] rounded-2xl p-8 shadow-lg"
-        >
-          <SectionTitle>{benefits.title}</SectionTitle>
-          {benefits.content.map((paragraph, pIndex) => (
-            <p key={pIndex} className="text-lg text-sage-600 mb-6 px-8">
-              {paragraph}
-            </p>
+        <div className="grid gap-8">
+          {sections.map((section, index) => (
+            <motion.div
+              key={section.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-[#f4f4f2] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">
+                {section.title}
+              </h2>
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div className="space-y-4">
+                  {section.content.map((paragraph, pIndex) => (
+                    <p key={pIndex} className="text-lg text-sage-600 leading-relaxed">
+                      {paragraph}
+                    </p>
+                  ))}
+                  {section.showButton && (
+                    <Button 
+                      className="bg-custom-sage hover:bg-custom-sage/90 text-white px-12 py-6 text-lg h-auto mt-6"
+                      onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+                    >
+                      Book Your Session Now
+                    </Button>
+                  )}
+                </div>
+                {section.image && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                    className="rounded-2xl overflow-hidden shadow-lg"
+                  >
+                    <img 
+                      src={section.image} 
+                      alt={section.imageAlt}
+                      className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </motion.div>
+                )}
+              </div>
+            </motion.div>
           ))}
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8 px-8">
-            {benefits.lists.map((list, lIndex) => (
-              <div key={lIndex} className="bg-[#f4f4f2] rounded-xl p-6">
-                <h3 className="text-xl font-semibold mb-4 text-sage-800">{list.title}</h3>
-                <ul className="space-y-3">
-                  {list.items.map((item, iIndex) => (
-                    <li key={iIndex} className="text-sage-600 flex items-start">
-                      <span className="mr-2 mt-1 text-sage-500">•</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="bg-[#f4f4f2] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            <SectionTitle>{benefits.title}</SectionTitle>
+            {benefits.content.map((paragraph, pIndex) => (
+              <p key={pIndex} className="text-lg text-sage-600 mb-6">
+                {paragraph}
+              </p>
             ))}
-          </div>
 
-          {benefits.image && (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="rounded-2xl overflow-hidden shadow-lg mb-8"
-            >
-              <img 
-                src={benefits.image} 
-                alt={benefits.imageAlt}
-                className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </motion.div>
-          )}
-        </motion.div>
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              {benefits.lists.map((list, lIndex) => (
+                <div 
+                  key={lIndex} 
+                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
+                >
+                  <h3 className="text-xl font-semibold mb-4 text-sage-800">{list.title}</h3>
+                  <ul className="space-y-3">
+                    {list.items.map((item, iIndex) => (
+                      <li key={iIndex} className="text-sage-600 flex items-start">
+                        <span className="mr-2 mt-1 text-sage-500">•</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="mb-24 px-8"
-        >
-          <SectionTitle>Who Can Benefit from Spinal Energetics?</SectionTitle>
-          <p className="text-lg text-white/90 mb-6">
-            Spinal Energetics is suitable for individuals seeking holistic healing, whether addressing specific physical issues or pursuing overall well-being. This modality can benefit:
-          </p>
-          <ul className="list-none space-y-4 mb-8">
-            {[
-              "Those with chronic pain or tension",
-              "Individuals dealing with stress, anxiety, or emotional blockages",
-              "People seeking greater alignment and balance in their lives",
-              "Anyone open to exploring the profound wisdom of their body's natural healing capabilities"
-            ].map((item, index) => (
-              <li key={index} className="flex items-center text-lg text-white/90">
-                <span className="mr-3 text-emerald-500">•</span>
-                {item}
-              </li>
-            ))}
-          </ul>
-        </motion.div>
+            {benefits.image && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="rounded-2xl overflow-hidden shadow-lg"
+              >
+                <img 
+                  src={benefits.image} 
+                  alt={benefits.imageAlt}
+                  className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </motion.div>
+            )}
+          </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="mb-24 px-8"
-        >
-          <SectionTitle>Why Choose Spinal Energetics?</SectionTitle>
-          <p className="text-lg text-white/90 mb-8">
-            Spinal Energetics goes beyond conventional approaches to healing by addressing the root causes of imbalance. It acknowledges the interconnectedness of your physical, emotional, and energetic systems, empowering you to reclaim your health and vitality in a profound and lasting way.
-          </p>
-        </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="bg-[#f4f4f2] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            <SectionTitle>Who Can Benefit from Spinal Energetics?</SectionTitle>
+            <p className="text-lg text-sage-600 mb-6">
+              Spinal Energetics is suitable for individuals seeking holistic healing, whether addressing specific physical issues or pursuing overall well-being. This modality can benefit:
+            </p>
+            <ul className="list-none space-y-4 mb-8">
+              {[
+                "Those with chronic pain or tension",
+                "Individuals dealing with stress, anxiety, or emotional blockages",
+                "People seeking greater alignment and balance in their lives",
+                "Anyone open to exploring the profound wisdom of their body's natural healing capabilities"
+              ].map((item, index) => (
+                <li key={index} className="flex items-center text-lg text-sage-600">
+                  <span className="mr-3 text-emerald-500">•</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
 
-        <BookingCard />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="bg-[#f4f4f2] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            <SectionTitle>Why Choose Spinal Energetics?</SectionTitle>
+            <p className="text-lg text-sage-600 mb-8">
+              Spinal Energetics goes beyond conventional approaches to healing by addressing the root causes of imbalance. It acknowledges the interconnectedness of your physical, emotional, and energetic systems, empowering you to reclaim your health and vitality in a profound and lasting way.
+            </p>
+          </motion.div>
+
+          <BookingCard />
+        </div>
       </div>
     </div>
   );
