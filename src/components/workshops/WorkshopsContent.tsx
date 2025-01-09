@@ -55,7 +55,7 @@ const workshops = [
 
 export const WorkshopsContent = () => {
   return (
-    <div className="py-20 bg-gradient-to-b from-white via-[#626857]/5 to-[#626857]/10">
+    <div className="py-20 bg-gradient-to-b from-white via-[#f4f4f2]/30 to-[#626857]/20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

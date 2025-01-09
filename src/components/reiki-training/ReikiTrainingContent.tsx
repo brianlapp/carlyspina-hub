@@ -7,7 +7,7 @@ import { TrainingBenefits } from "./TrainingBenefits";
 
 export const ReikiTrainingContent = () => {
   return (
-    <div className="py-8 md:py-16 bg-gradient-to-b from-white via-sage-50/30 to-[#626857]/20">
+    <div className="py-8 md:py-16 bg-gradient-to-b from-white via-[#f4f4f2]/30 to-[#626857]/20">
       <div className="container mx-auto px-4">
         <TrainingOverview />
         <TrainingLevels />

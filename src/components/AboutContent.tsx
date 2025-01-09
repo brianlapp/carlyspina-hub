@@ -21,7 +21,7 @@ export const AboutContent = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-white to-sage-50/30">
+    <section className="py-20 px-4 bg-gradient-to-b from-white to-[#f4f4f2]/30">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
