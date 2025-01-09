@@ -21,7 +21,7 @@ export const AboutContent = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-white to-[#f4f4f2]">
+    <section className="py-20 px-4 bg-[#626857]">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -29,7 +29,7 @@ export const AboutContent = () => {
         className="container mx-auto max-w-4xl"
       >
         {/* First Text Block with Right Image */}
-        <Card className="mb-20 overflow-hidden border-sage-200/50 shadow-lg bg-white/80 backdrop-blur-sm">
+        <Card className="mb-20 overflow-hidden border-sage-200/50 shadow-lg bg-[#f4f4f2] backdrop-blur-sm">
           <CardContent className="p-8">
             <div className="grid md:grid-cols-2 gap-12">
               <motion.div
@@ -71,7 +71,7 @@ export const AboutContent = () => {
         </Card>
 
         {/* Middle Text Block */}
-        <Card className="mb-20 overflow-hidden border-sage-200/50 shadow-lg bg-white/80 backdrop-blur-sm">
+        <Card className="mb-20 overflow-hidden border-sage-200/50 shadow-lg bg-[#f4f4f2] backdrop-blur-sm">
           <CardContent className="p-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -97,7 +97,7 @@ export const AboutContent = () => {
         </Card>
 
         {/* Final Text Block with Left Image */}
-        <Card className="mb-12 overflow-hidden border-sage-200/50 shadow-lg bg-white/80 backdrop-blur-sm">
+        <Card className="mb-12 overflow-hidden border-sage-200/50 shadow-lg bg-[#f4f4f2] backdrop-blur-sm">
           <CardContent className="p-8">
             <div className="grid md:grid-cols-2 gap-12">
               <motion.div
