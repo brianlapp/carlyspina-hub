@@ -101,7 +101,7 @@ export const TestimonialsSection = () => {
           <Link to="/testimonials">
             <Button 
               size="lg" 
-              className="mt-12 bg-[#f4f4f2] hover:bg-[#f4f4f2]/90 text-[#626857] px-8 py-6 text-lg h-auto w-full sm:w-auto font-semibold"
+              className="mt-12 bg-[#f4f4f2] hover:bg-[#f4f4f2]/90 text-[#626857] px-12 py-6 text-lg h-auto w-[300px] font-semibold border border-sage-600"
             >
               View All Reviews
             </Button>
