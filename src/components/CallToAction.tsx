@@ -38,7 +38,7 @@ export const CallToAction = ({
       viewport={{ once: true }}
       className="bg-white rounded-2xl p-8 border border-sage-100 relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-sage-50/30 to-[#626857]/20 z-0" />
+      <div className="absolute inset-0 bg-[#f4f4f2] z-0" />
       
       <div className="relative z-10">
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">

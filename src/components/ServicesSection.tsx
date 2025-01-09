@@ -41,7 +41,7 @@ export const ServicesSection = () => {
   };
 
   return (
-    <section id="services-section" className="py-24 bg-gradient-to-b from-white via-sage-50/30 to-[#626857]/20">
+    <section id="services-section" className="py-24 bg-gradient-to-b from-white via-[#f4f4f2] to-[#626857]/20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
