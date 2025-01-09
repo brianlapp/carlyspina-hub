@@ -43,7 +43,7 @@ export const TestimonialsSection = () => {
   const scrollTo = (index: number) => api?.scrollTo(index);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white via-[#f4f4f2] to-[#626857]/20">
+    <section className="py-20 bg-[#f4f4f2]">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
