@@ -80,7 +80,7 @@ export const SpinalEnergeticsContent = () => {
   };
 
   return (
-    <div className="py-16 bg-gradient-to-b from-white via-[#f4f4f2]/30 to-[#626857]/20">
+    <div className="py-16 bg-gradient-to-b from-white via-[#f4f4f2] to-[#626857]">
       <div className="container mx-auto px-4">
         {sections.map((section, index) => (
           <ContentSection
