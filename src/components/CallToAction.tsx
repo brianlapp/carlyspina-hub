@@ -41,7 +41,7 @@ export const CallToAction = ({
       <div className="absolute inset-0 bg-[#f4f4f2] z-0" />
       
       <div className="relative z-10">
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             className="bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors min-w-[200px] h-14 text-lg"
             onClick={() => window.open(primaryLink, '_blank')}
