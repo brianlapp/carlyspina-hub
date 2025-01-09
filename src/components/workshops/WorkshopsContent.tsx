@@ -175,19 +175,21 @@ export const WorkshopsContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center"
+            className="max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl font-bold mb-6 text-sage-900">Join Us for a Workshop</h2>
-            <p className="text-sage-600 mb-8">
-              Are you ready to embark on a transformative journey of self-discovery and healing? Join Carly Spina for one of our workshops and experience the profound benefits of group energy. Whether you're new to holistic practices or a seasoned wellness enthusiast, our workshops are designed to meet you where you are and guide you toward greater well-being.
-            </p>
-            <Button 
-              size="lg"
-              className="bg-custom-sage hover:bg-custom-sage/90 text-white px-6 py-4 text-base md:text-lg h-auto w-full md:w-auto"
-              onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
-            >
-              Book Workshop
-            </Button>
+            <Card className="p-8 md:p-12 bg-white shadow-lg text-center">
+              <h2 className="text-3xl font-bold mb-6 text-sage-900">Join Us for a Workshop</h2>
+              <p className="text-sage-600 mb-8">
+                Are you ready to embark on a transformative journey of self-discovery and healing? Join Carly Spina for one of our workshops and experience the profound benefits of group energy. Whether you're new to holistic practices or a seasoned wellness enthusiast, our workshops are designed to meet you where you are and guide you toward greater well-being.
+              </p>
+              <Button 
+                size="lg"
+                className="bg-custom-sage hover:bg-custom-sage/90 text-white px-6 py-4 text-base md:text-lg h-auto w-full md:w-auto"
+                onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+              >
+                Book Workshop
+              </Button>
+            </Card>
           </motion.div>
         </div>
       </div>
