@@ -120,18 +120,26 @@ export const WorkshopsContent = () => {
           ))}
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto space-y-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-[#626857]/10 shadow-sm"
           >
-            <h2 className="text-3xl font-bold mb-6 text-sage-900">How Do Our Workshops Work?</h2>
-            <p className="text-sage-600 mb-4">
-              Each workshop begins with a grounding exercise to help participants settle into the space and connect with their intention for the session. Carly Spina expertly guides the group through the chosen modality, creating a harmonious and inclusive environment. The workshops are accessible to individuals of all experience levels, making them ideal for anyone seeking physical, emotional, or spiritual healing.
-            </p>
+            <Card className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-[#626857]/10 shadow-lg">
+              <div className="flex flex-col md:flex-row items-start gap-8">
+                <div className="md:w-1/3">
+                  <h2 className="text-2xl md:text-3xl font-bold text-sage-900 mb-4">How Do Our Workshops Work?</h2>
+                  <div className="h-1 w-20 bg-custom-sage rounded-full mb-4"></div>
+                </div>
+                <div className="md:w-2/3">
+                  <p className="text-sage-600 text-lg leading-relaxed">
+                    Each workshop begins with a grounding exercise to help participants settle into the space and connect with their intention for the session. Carly Spina expertly guides the group through the chosen modality, creating a harmonious and inclusive environment. The workshops are accessible to individuals of all experience levels, making them ideal for anyone seeking physical, emotional, or spiritual healing.
+                  </p>
+                </div>
+              </div>
+            </Card>
           </motion.div>
 
           <motion.div
@@ -139,18 +147,33 @@ export const WorkshopsContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-[#626857]/10 shadow-sm"
           >
-            <h2 className="text-3xl font-bold mb-6 text-sage-900">Why Choose Group Healing Workshops?</h2>
-            <p className="text-sage-600 mb-4">
-              Healing in a group amplifies the energetic field, creating a powerful synergy that enhances individual and collective experiences. These workshops offer:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-sage-600">
-              <li>A sense of connection and shared purpose</li>
-              <li>Increased motivation and accountability for personal growth</li>
-              <li>A safe and supportive space to explore and release emotions</li>
-              <li>The opportunity to learn from and inspire one another</li>
-            </ul>
+            <Card className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-[#626857]/10 shadow-lg">
+              <div className="flex flex-col md:flex-row items-start gap-8">
+                <div className="md:w-1/3">
+                  <h2 className="text-2xl md:text-3xl font-bold text-sage-900 mb-4">Why Choose Group Healing Workshops?</h2>
+                  <div className="h-1 w-20 bg-custom-sage rounded-full mb-4"></div>
+                </div>
+                <div className="md:w-2/3">
+                  <p className="text-sage-600 text-lg leading-relaxed mb-6">
+                    Healing in a group amplifies the energetic field, creating a powerful synergy that enhances individual and collective experiences. These workshops offer:
+                  </p>
+                  <ul className="list-none space-y-3">
+                    {[
+                      "A sense of connection and shared purpose",
+                      "Increased motivation and accountability for personal growth",
+                      "A safe and supportive space to explore and release emotions",
+                      "The opportunity to learn from and inspire one another"
+                    ].map((benefit, index) => (
+                      <li key={index} className="flex items-center text-sage-600">
+                        <span className="h-2 w-2 bg-custom-sage rounded-full mr-3 flex-shrink-0"></span>
+                        <span className="text-lg">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </Card>
           </motion.div>
 
           <motion.div
@@ -158,16 +181,31 @@ export const WorkshopsContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-[#626857]/10 shadow-sm"
           >
-            <h2 className="text-3xl font-bold mb-6 text-sage-900">Who Are These Workshops For?</h2>
-            <p className="text-sage-600 mb-4">Our workshops are perfect for:</p>
-            <ul className="list-disc list-inside space-y-2 text-sage-600">
-              <li>Individuals seeking stress relief and relaxation</li>
-              <li>Those looking to deepen their spiritual practice</li>
-              <li>People curious about energy healing and holistic wellness</li>
-              <li>Groups of friends or family members wanting a shared healing experience</li>
-            </ul>
+            <Card className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-[#626857]/10 shadow-lg">
+              <div className="flex flex-col md:flex-row items-start gap-8">
+                <div className="md:w-1/3">
+                  <h2 className="text-2xl md:text-3xl font-bold text-sage-900 mb-4">Who Are These Workshops For?</h2>
+                  <div className="h-1 w-20 bg-custom-sage rounded-full mb-4"></div>
+                </div>
+                <div className="md:w-2/3">
+                  <p className="text-sage-600 text-lg leading-relaxed mb-6">Our workshops are perfect for:</p>
+                  <ul className="list-none space-y-3">
+                    {[
+                      "Individuals seeking stress relief and relaxation",
+                      "Those looking to deepen their spiritual practice",
+                      "People curious about energy healing and holistic wellness",
+                      "Groups of friends or family members wanting a shared healing experience"
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-center text-sage-600">
+                        <span className="h-2 w-2 bg-custom-sage rounded-full mr-3 flex-shrink-0"></span>
+                        <span className="text-lg">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </Card>
           </motion.div>
 
           <motion.div
@@ -175,7 +213,6 @@ export const WorkshopsContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="max-w-3xl mx-auto"
           >
             <Card className="p-8 md:p-12 bg-white shadow-lg text-center">
               <h2 className="text-3xl font-bold mb-6 text-sage-900">Join Us for a Workshop</h2>
