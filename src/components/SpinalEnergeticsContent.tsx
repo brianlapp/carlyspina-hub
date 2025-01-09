@@ -80,7 +80,7 @@ export const SpinalEnergeticsContent = () => {
   };
 
   return (
-    <div className="py-16 bg-gradient-to-b from-white via-[#f4f4f2] to-[#626857]">
+    <div className="py-16 bg-[#626857]">
       <div className="container mx-auto px-4">
         {sections.map((section, index) => (
           <ContentSection
@@ -99,7 +99,7 @@ export const SpinalEnergeticsContent = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="mb-24 bg-white rounded-2xl p-8 shadow-lg"
+          className="mb-24 bg-[#f4f4f2] rounded-2xl p-8 shadow-lg"
         >
           <SectionTitle>{benefits.title}</SectionTitle>
           {benefits.content.map((paragraph, pIndex) => (
@@ -110,7 +110,7 @@ export const SpinalEnergeticsContent = () => {
 
           <div className="grid md:grid-cols-2 gap-8 mb-8 px-8">
             {benefits.lists.map((list, lIndex) => (
-              <div key={lIndex} className="bg-sage-50 rounded-xl p-6">
+              <div key={lIndex} className="bg-[#f4f4f2] rounded-xl p-6">
                 <h3 className="text-xl font-semibold mb-4 text-sage-800">{list.title}</h3>
                 <ul className="space-y-3">
                   {list.items.map((item, iIndex) => (
@@ -149,7 +149,7 @@ export const SpinalEnergeticsContent = () => {
           className="mb-24 px-8"
         >
           <SectionTitle>Who Can Benefit from Spinal Energetics?</SectionTitle>
-          <p className="text-lg text-sage-600 mb-6">
+          <p className="text-lg text-white/90 mb-6">
             Spinal Energetics is suitable for individuals seeking holistic healing, whether addressing specific physical issues or pursuing overall well-being. This modality can benefit:
           </p>
           <ul className="list-none space-y-4 mb-8">
@@ -159,7 +159,7 @@ export const SpinalEnergeticsContent = () => {
               "People seeking greater alignment and balance in their lives",
               "Anyone open to exploring the profound wisdom of their body's natural healing capabilities"
             ].map((item, index) => (
-              <li key={index} className="flex items-center text-lg text-sage-600">
+              <li key={index} className="flex items-center text-lg text-white/90">
                 <span className="mr-3 text-emerald-500">•</span>
                 {item}
               </li>
@@ -175,7 +175,7 @@ export const SpinalEnergeticsContent = () => {
           className="mb-24 px-8"
         >
           <SectionTitle>Why Choose Spinal Energetics?</SectionTitle>
-          <p className="text-lg text-sage-600 mb-8">
+          <p className="text-lg text-white/90 mb-8">
             Spinal Energetics goes beyond conventional approaches to healing by addressing the root causes of imbalance. It acknowledges the interconnectedness of your physical, emotional, and energetic systems, empowering you to reclaim your health and vitality in a profound and lasting way.
           </p>
         </motion.div>
