@@ -34,9 +34,7 @@ export const IntroSection = () => {
         once: true
       }} className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-custom-sage-light to-custom-sage bg-clip-text text-transparent">Healing Meets Transformation</h2>
-          <p className="text-lg md:text-xl text-sage-600 leading-relaxed">
-            Welcome to CarlySpina.com, where healing meets transformation. Carly Spina is a dedicated practitioner specializing in Spinal Energetics, Reiki, Akashic Records Reading, and a variety of holistic modalities. With a passion for empowering others to embrace their highest potential, Carly offers personalized sessions and group experiences designed to nurture the body, mind, and soul.
-          </p>
+          <p className="text-lg md:text-xl text-sage-600 leading-relaxed">Carly Spina is a dedicated practitioner specializing in Spinal Energetics, Reiki, Akashic Records Reading, and a variety of holistic modalities. With a passion for empowering others to embrace their highest potential, Carly offers personalized sessions and group experiences designed to nurture the body, mind, and soul.</p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <Button onClick={handleBookNow} className="bg-custom-sage hover:bg-custom-sage/90 text-white transition-colors" size="lg">
               Book Now
