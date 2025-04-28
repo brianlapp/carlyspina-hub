@@ -74,7 +74,7 @@ export const DesktopNav = ({ services, navItems }: DesktopNavProps) => {
       </NavigationMenu>
       <Button 
         className="bg-[#626857] text-white hover:bg-[#626857]/90 transition-colors"
-        onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+        onClick={() => window.open('https://app.acuityscheduling.com/schedule/fb70b564', '_blank')}
       >
         Book Now
       </Button>
