@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 export const IntroSection = () => {
   const handleBookNow = () => {
-    window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank');
+    window.open('https://app.acuityscheduling.com/schedule/fb70b564', '_blank');
   };
   const scrollToAbout = () => {
     const aboutSection = document.querySelector('#about-section');

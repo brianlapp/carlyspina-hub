@@ -42,7 +42,7 @@ export const ContentSection = ({
               <div className="mt-8">
                 <Button 
                   className="bg-custom-sage hover:bg-custom-sage/90 text-white px-12 py-6 text-lg h-auto"
-                  onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+                  onClick={() => window.open('https://app.acuityscheduling.com/schedule/fb70b564', '_blank')}
                 >
                   Book Your Session Now
                 </Button>

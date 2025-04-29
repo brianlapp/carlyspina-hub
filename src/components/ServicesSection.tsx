@@ -37,7 +37,7 @@ const services = [
 
 export const ServicesSection = () => {
   const handleBookNow = () => {
-    window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank');
+    window.open('https://app.acuityscheduling.com/schedule/fb70b564', '_blank');
   };
 
   return (

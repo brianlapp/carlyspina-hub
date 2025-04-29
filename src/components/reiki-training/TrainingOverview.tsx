@@ -22,7 +22,7 @@ export const TrainingOverview = () => {
           </p>
           <Button 
             className="bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors px-12 py-6 text-lg h-auto"
-            onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+            onClick={() => window.open('https://app.acuityscheduling.com/schedule/fb70b564', '_blank')}
           >
             Begin Your Journey
           </Button>

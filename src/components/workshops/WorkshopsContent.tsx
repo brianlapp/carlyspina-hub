@@ -70,7 +70,7 @@ export const WorkshopsContent = () => {
           <Button 
             size="lg"
             className="mt-8 bg-custom-sage hover:bg-custom-sage/90 text-white px-6 py-4 text-base md:text-lg h-auto w-full md:w-auto"
-            onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+            onClick={() => window.open('https://app.acuityscheduling.com/schedule/fb70b564', '_blank')}
           >
             Book Workshop
           </Button>
@@ -110,7 +110,7 @@ export const WorkshopsContent = () => {
                   </div>
                   <Button 
                     className="mt-6 w-full bg-[#626857] hover:bg-[#626857]/90 text-white py-4 h-auto text-base md:text-lg"
-                    onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+                    onClick={() => window.open('https://app.acuityscheduling.com/schedule/fb70b564', '_blank')}
                   >
                     Book {workshop.title}
                   </Button>
@@ -222,7 +222,7 @@ export const WorkshopsContent = () => {
               <Button 
                 size="lg"
                 className="bg-custom-sage hover:bg-custom-sage/90 text-white px-6 py-4 text-base md:text-lg h-auto w-full md:w-auto"
-                onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+                onClick={() => window.open('https://app.acuityscheduling.com/schedule/fb70b564', '_blank')}
               >
                 Book Workshop
               </Button>

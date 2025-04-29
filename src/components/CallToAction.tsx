@@ -12,7 +12,7 @@ interface CallToActionProps {
 
 export const CallToAction = ({
   primaryText = "Book With Carly Spina",
-  primaryLink = "https://windsorhealingandwellness.square.site/s/appointments",
+  primaryLink = "https://app.acuityscheduling.com/schedule/fb70b564",
   secondaryText = "Join Our Mailing List",
   onSecondaryClick
 }: CallToActionProps) => {

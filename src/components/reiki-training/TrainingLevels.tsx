@@ -65,7 +65,7 @@ export const TrainingLevels = () => {
       <div className="text-center mt-8">
         <Button 
           className="bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors px-6 py-4 text-base md:text-lg h-auto w-full md:w-auto"
-          onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+          onClick={() => window.open('https://app.acuityscheduling.com/schedule/fb70b564', '_blank')}
         >
           Book Training
         </Button>

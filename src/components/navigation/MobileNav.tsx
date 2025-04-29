@@ -51,7 +51,7 @@ export const MobileNav = ({ services, navItems, onClose }: MobileNavProps) => {
             <Button 
               className="w-full bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors"
               onClick={() => {
-                window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank');
+                window.open('https://app.acuityscheduling.com/schedule/fb70b564', '_blank');
                 onClose();
               }}
             >

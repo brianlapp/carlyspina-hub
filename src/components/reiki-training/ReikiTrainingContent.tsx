@@ -69,7 +69,7 @@ export const ReikiTrainingContent = () => {
               </p>
               <Button 
                 className="w-full md:w-auto bg-custom-sage text-white hover:bg-custom-sage/90 transition-colors px-6 md:px-12 py-4 md:py-6 text-base md:text-lg h-auto"
-                onClick={() => window.open('https://windsorhealingandwellness.square.site/s/appointments', '_blank')}
+                onClick={() => window.open('https://app.acuityscheduling.com/schedule/fb70b564', '_blank')}
               >
                 Start Your Journey
               </Button>
